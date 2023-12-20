@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국은행</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet"  href="slick/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="script/c2_tab.js"></script>
+    <script src="script/c3_tab.js"></script>
+    <script src="script/menu.js"></script>
+  <style>
+    .slick-slide img { width: 100%; height:100%;  }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    } 
+    .slick-active {    opacity: .5;    }
+    .slick-current {     opacity: 1;   }
+  </style>
+    <style>
+        .swiper {
+      height: 100%;
+      margin-right: 20px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+    </style>
+</head>
+<body>
+    <div id="headerwrap">
+        <div id="top">
+            <div class="t-inner">
+                <ul class="tmenu">
+                    <li><a href="#">경제통계시스템(ECOS)</a></li>
+                    <li><a href="#">금융·경제 스냅샷</a></li>
+                    <li><a href="#">전자도서관</a></li>
+                    <li><a href="#">채용</a></li>
+                    <li><a href="#">한국은행 70주년</a></li>
+                </ul>
+                <div class="info">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">한국은행 SNS</a></li>
+                    </ul>
+                    <div class="eng">
+                        <a href="#">English</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+            <ul class="lnb">
+                <li><a href="#">경제연구원</a></li>
+                <li><a href="#">화폐박물관</a></li>
+                <li><a href="#">지역본부</a></li>
+            </ul>
+            <h2><a href="index.html">한국은행로고</a></h2>
+            <div class="searchwrap">
+                <form action="#">
+                    <input type="search" placeholder="검색어를 입력해 주세요.">
+                    <input type="image" src="images/search.png" alt="검색">
+                </form>
+            </div>
+        </div><!-- header end -->
+    </div><!-- headerwrap end -->
+    <div id="gnbwrap">
+        <div class="gnb">
+            <ul>
+                <li><a href="sub1.html">한국은행</a>
+                    <div class="subset">
+                        <ul class="sub1">
+                            <p>한국은행</p>
+                            <li>
+                                <a href="#">한국은행 안내</a>
+                                <div>
+                                    <ul>
+                                        <li><a href="#">설립목적</a></li>
+                                        <li><a href="#">한국은행 역사</a></li>
+                                        <li><a href="#">전략 및 조직가치</a></li>
+                                        <li><a href="#">주요 기능 및 역할</a></li>
+                                        <li><a href="#">조직도</a></li>
+                                        <li><a href="#">CI 소개</a></li>
+                                        <li><a href="#">한국은행 이용안내</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">금융통화위원회</a>
+                                <div>
+                                    <ul>
+                                        <li><a href="#">구성 및 운영</a></li>
+                                        <li><a href="#">위원현황</a></li>
+                                        <li><a href="#">의결사항</a></li>
+                                        <li><a href="#">금융통화위원회 의사록</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">경영정보</a>
+                                <div>
+                                    <ul>
+                                        <li><a href="#">인원현황</a></li>
+                                        <li><a href="#">인건비 현황</a></li>
+                                        <li><a href="#">주요 업무 추진 현황</a></li>
+                                        <li><a href="#">재무현황</a></li>
+                                        <li><a href="#">외부강사 결과 등</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">법규정보</a>
+                                <div>
+                                    <ul>
+                                        <li><a href="#">법령 검색</a></li>
+                                        <li><a href="#">가나다 검색</a></li>
+                                        <li><a href="#">최근개정법규</a></li>
+                                        <li><a href="#">규정예고</a></li>
+                                        <li><a href="#">고문변호사 현황</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">계약정보</a>
+                                <div>
+                                    <ul>
+                                        <li><a href="#">계약정보 안내</a></li>
+                                        <li><a href="#">발주계획</a></li>
+                                        <li><a href="#">경쟁입찰계약현황</a></li>
+                                        <li><a href="#">수의계약현황</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">윤리경영</a>
+                                <div>
+                                    <ul>
+                                        <li><a href="#">윤리경영실천규범</a></li>
+                                        <li><a href="#">윤리경영활동</a></li>
+                                        <li><a href="#">CLEAN신고</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">사회공헌활동</a>
+                                <div>
+                                    <ul>
+                                        <li><a href="#">사회공헌 소식</a></li>
+                                        <li><a href="#">사회기부 현황</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="sub2.html">통화정책</a>
+                    <div class="subset">
+                        <ul class="sub2">
+                            <p>통화정책</p>
+                            <li>
+                                <a href="#">통화정책 운영체제</a>
+                                <div class="sub2-1">
+                                    <ul>
+                                        <li><a href="#">물가안정목표제</a></li>
+                                        <li><a href="#">한국은행 기준금리</a></li>
+                                        <li><a href="#">통화정책의 실제운영</a></li>
+                                        <li><a href="#">통화정책 효과의 파급</a></li>
+                                        <li><a href="#">통화정책 관련 법규</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">통화정책방향</a>
+                                <div class="sub2-2">
+                                    <ul>
+                                        <li><a href="#">통화정책방향 결정회의</a></li>
+                                        <li><a href="#">한국은행 기준금리 추이</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">통화정책수단</a>
+                                <div class="sub2-3">
+                                    <ul>
+                                        <li><a href="#">공개시장운영</a></li>
+                                        <li><a href="#">여·수신제도</a></li>
+                                        <li><a href="#">지급준비제도</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">중소기업 금융지원제도</a>
+                                <div class="sub2-4">
+                                    <ul>
+                                        <li><a href="#">기본체계</a></li>
+                                        <li><a href="#">한국은행의 지원제도</a></li>
+                                        <li><a href="#">타기관 지원제도</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="sub3.html">외환·국제금융</a>
+                    <div class="subset">
+                        <ul class="sub3">
+                            <p>외환·국제금융</p>
+                            <li>
+                                <a href="#">외환시장과 외환제도</a>
+                                <div class="sub3-1">
+                                    <ul>
+                                        <li><a href="#">외환정책과 외환제도</a></li>
+                                        <li><a href="#">외환시장과 환율</a></li>
+                                        <li><a href="#">외환시장운영협의회</a></li>
+                                        <li><a href="#">외환보유액</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">국제협력</a>
+                                <div class="sub3-2">
+                                    <ul>
+                                        <li><a href="#">현황</a></li>
+                                        <li><a href="#">주요 국제기구 국제회의체 가입 현황</a></li>
+                                        <li><a href="#">통화스왑 현황</a></li>
+                                        <li><a href="#">관련 사이트</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">외환거래 심사</a>
+                                <div class="sub3-3">
+                                    <ul>
+                                        <li><a href="#">외환거래심사업무 안내</a></li>
+                                        <li><a href="#">외환거래별 신고안내</a></li>
+                                        <li><a href="#">외환거래 담당기관 안내</a></li>
+                                        <li><a href="#">외환거래 법규안내</a></li>
+                                        <li><a href="#">온라인 외환심사 시스템</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">경쟁입찰</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="sub4.html">화폐</a>
+                    <div class="subset">
+                        <ul class="sub4">
+                            <p>화폐</p>
+                            <li>
+                                <a href="#">은행권</a>
+                                <div class="sub4-1">
+                                    <ul>
+                                        <li><a href="#">현용은행권</a></li>
+                                        <li><a href="#">기념은행권</a></li>
+                                        <li><a href="#">위조방지장치</a></li>
+                                        <li><a href="#">위조지폐 기번호 검색</a></li>
+                                        <li><a href="#">우리나라 은행권의 변천</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">주화</a>
+                                <div class="sub4-2">
+                                    <ul>
+                                        <li><a href="#">현용주화</a></li>
+                                        <li><a href="#">기념주화</a></li>
+                                        <li><a href="#">우리나라 주화의 변천</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">주화수급정보센터</a>
+                                <div class="sub4-3">
+                                    <ul>
+                                        <li><a href="#">이용안내</a></li>
+                                        <li><a href="#">대량공급처</a></li>
+                                        <li><a href="#">대량수요처</a></li>
+                                        <li><a href="#">정보게시판</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">홍보교육자료</a>
+                                <div class="sub4-4">
+                                    <ul>
+                                        <li><a href="#">화폐연대자료</a></li>
+                                        <li><a href="#">화폐이야기</a></li>
+                                        <li><a href="#">화폐사랑 콘텐츠 공모전</a></li>
+                                        <li><a href="#">자료</a></li>
+                                        <li><a href="#">현금사용 선택권이란?</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">화폐 관련 법규 및 서식</a>
+                                <div class="sub4-5">
+                                    <ul>
+                                        <li><a href="#">화폐관련 법령</a></li>
+                                        <li><a href="#">화폐도안 이용기준</a></li>
+                                        <li><a href="#">위조지폐 신고</a></li>
+                                        <li><a href="#">훼손주화 발견시 처리요령</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">화폐교환 기준 및 신청</a>
+                                <div class="sub4-6">
+                                    <ul>
+                                        <li><a href="#">화폐 교환 기준 및 방법</a></li>
+                                        <li><a href="#">대량주화 교환 신청</a></li>
+                                        <li><a href="#">예약확인 및 수정취소</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="sub5.html">경제통계</a>
+                    <div class="subset">
+                        <ul class="sub5">
+                            <p>경제통계</p>
+                            <li>
+                                <a href="#">경제통계 개요</a>
+                                <div class="sub5-1">
+                                    <ul>
+                                        <li><a href="#">경제통계의 역할</a></li>
+                                        <li><a href="#">경제통계 관련 법규</a></li>
+                                        <li><a href="#">한국은행 작성 경제통계</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">주요통계 해설</a>
+                                <div class="sub5-2">
+                                    <ul>
+                                        <li><a href="#">국민소득통계</a></li>
+                                        <li><a href="#">산업연관표</a></li>
+                                        <li><a href="#">국민대차대조표</a></li>
+                                        <li><a href="#">경기판단지표</a></li>
+                                        <li><a href="#">기업경영분석지표</a></li>
+                                        <li><a href="#">자금순환표</a></li>
+                                        <li><a href="#">통화자금</a></li>
+                                        <li><a href="#">금리지표</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">통계공표일정</a>
+                                <div class="sub5-3">
+                                    <ul>
+                                        <li><a href="#">월간통계 공표일정</a></li>
+                                        <li><a href="#">통계종류별 공표일정</a></li>
+                                        <li><a href="#">SDDS 대상통계 공표일정</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">통계조사표</a>
+                                <div class="sub5-4">
+                                    <ul>
+                                        <li><a href="#">통화금융통계</a></li>
+                                        <li><a href="#">자금순황통계</a></li>
+                                        <li><a href="#">국제수지통계</a></li>
+                                        <li><a href="#">국외투자통계</a></li>
+                                        <li><a href="#">기업경영분석 통계</a></li>
+                                        <li><a href="#">물가통계</a></li>
+                                        <li><a href="#">국민소득통계</a></li>
+                                        <li><a href="#">투입산출통계</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">통계검색</a>
+                                <div class="sub5-5">
+                                    <ul>
+                                        <li><a href="#">통화/금융</a></li>
+                                        <li><a href="#">국민계정</a></li>
+                                        <li><a href="#">물가</a></li>
+                                        <li><a href="#">심리지수</a></li>
+                                        <li><a href="#">해외/북한</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><img src="images/menu.png" alt="전체메뉴 펼쳐볼 수 있는 메뉴 아이콘"></a></li>
+            </ul>
+        </div><!-- gnb end -->
+    </div><!-- gnbwrap end -->
+    <div id="container">
+        <div id="content1">
+            <div class="visual">
+                <!-- 슬라이더로 붙이기 때문에 나중에 변경 -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/v1.png" alt="팬데믹과 Job-rich recovery 이미지"></div>
+                        <div class="swiper-slide"><img src="images/v2.png" alt="2023.10월 경제상황 평가 이미지"></div>
+                        <div class="swiper-slide"><img src="images/v3.png" alt="통화정책방향 회의 이미지"></div>
+                        <div class="swiper-slide"><img src="images/v4.png" alt="미 연준 고금리 장기화에 대한 이미지"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div><!-- visual end -->
+            <div class="right1">
+                <div class="cont1">
+                    <div class="mus">
+                        <h3>화폐박물관 관람 안내</h3>
+                        <img src="images/museum.jpg" alt="화폐박물관 이미지">
+                        <a href="#">
+                            <p>개인관람 <em>신청하기 →</em></p>
+                        </a>
+                        <p><strong>관람시간</strong><br>매주 화요일~일요일 <br>10:00~17:00</p>
+                        <p><strong>휴관일</strong><br>월요일, 공휴일, 설연휴</p>
+                    </div>
+                </div><!-- cont1 end -->
+                <div class="cont2">
+                    <!-- 뉴스레터 배경이미지는 background 이미지로 함 -->
+                    <p>한주간의 다양한 정보를 담은 <br>뉴스레터를 전해드립니다.</p>
+                    <a href="#">뉴스레터 신청</a>
+                    <a href="#">정보변경/취소</a>
+                </div><!-- cont2 end -->
+            </div><!-- right1 end -->
+        </div><!-- content1 end -->
+        <div id="content2">
+            <div class="padd">
+                <div class="left2">
+                    <a href="#" class="c2_more"><img src="images/more.png" alt="+ 버튼"></a>
+                    <ul class="tabs"><!-- plus 버튼 넣어야함 -->
+                        <li class="tab-link current" data-tab="tab-1">보도자료</li>
+                        <li class="tab-link" data-tab="tab-2">공지사항</li>
+                        <li class="tab-link" data-tab="tab-3">블로그</li>
+                    </ul>
+                    <div id="tab-1" class="tab-content current">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="tit"><span>2023년 10월말 외환보유액</span></div>
+                                    <div class="cArea">
+                                        <span class="con">자세한 내용은 첨부파일을 참고하시기 바랍니다.</span>
+                                        <span class="date">2023.11.03</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="tit"><span>[보도자료] 2023년 BOK 지역경제 심포지엄 개최</span></div>
+                                    <div class="cArea">
+                                        <span class="con">자세한 내용은 첨부파일을 참고하시기 바랍니다.</span>
+                                        <span class="date">2023.11.02</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="tit"><span>[보도자료] 한국은행, 대한상공회의소와 공동세미나 개최</span></div>
+                                    <div class="cArea">
+                                        <span class="con">※ 자세한 내용은 붙임 파일을 참고해 주시기 바랍니다.</span>
+                                        <span class="date">2023.11.02</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="tit"><span>[보도자료] 2023년도 한국은행 전자금융세미나 개최</span></div>
+                                    <div class="cArea">
+                                        <span class="con">□ 한국은행은 10월 31일(화) "디지털 금융의 발전 방향 및 향후 과제"를 주제로 전자금융세미나를 개최 ※ 자세한 내용은 붙임 파일을 참고해 주시기 바랍니다.</span>
+                                        <span class="date">2023.10.31</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- tab-1 end -->
+                    <div id="tab-2" class="tab-content">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="tit"><span>≪ 23.9적립월 환매조건부매각 및 통화안정계정 우수대상기관 선정 안내 ≫</span></div>
+                                    <div class="cArea">
+                                        <span class="con">□ 한국은행은 23.9적립월중(23.10.12~11.2일) RP매매 및 통화안정계정 우수대상기관(5개사)을 다음과 같이 선정하였음을 알려드립니다.</span>
+                                        <span class="date">2023.11.03</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="tit"><span>"국고 03625-2509-0206" 국고채권발행공고</span></div>
+                                    <div class="cArea">
+                                        <span class="con">기획재정부의 2년 만기 국고채권(종목코드 : 03625-2509-0206) 발행 계획을 「국채법시행규칙」 제7조에 의거 첨부파일과 같이 공고합니다.</span>
+                                        <span class="date">2023.11.02</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="tit"><span>2023.11.2(목) RP매각 실시 결과</span></div>
+                                    <div class="cArea">
+                                        <span class="con">- 7일물(2023-057-007) 모집 ○ 매각금리 : 3.50% ○ 응찰액 : 39.95조원 ○ 낙찰액 : 3.00조원</span>
+                                        <span class="date">2023.11.02</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="tit"><span>2023.11.2(목) RP매각 실시 정보</span></div>
+                                    <div class="cArea">
+                                        <span class="con">- 7일물 (2023-057-007) 모집 ○ 매각금리 : 3.50% ○ 매각일자 : 2023.11.2(목) ○ 환매일자 : 2023.11.9(목)</span>
+                                        <span class="date">2023.11.02</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- tab-2 end -->
+                    <div id="tab-3" class="tab-content">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="tit"><span>미 연준의 고금리 장기화에 대한 평가</span></div>
+                                    <div class="cArea">
+                                        <span class="con">미국 연방준비제도(이하 '미 연준')의 11월 FOMC 회의가 이번주(10.31~11.1일)에 개최될 예정이다.</span>
+                                        <span class="date">2023.10.30</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="tit"><span>팬데믹과 Job-rich recovery</span></div>
+                                    <div class="cArea">
+                                        <span class="con">팬데믹 이후 나타난 Job-rich recovery 팬데믹 이후 경기회복 과정에서 고용률(실업률)이 빠르게 상승(하락)하는 Job-rich recovery(고용호조 성장)</span>
+                                        <span class="date">2023.10.26</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="tit"><span>2023.10월 경제상황 평가: 성장 및 물가 경로의 불확실성 증대</span></div>
+                                    <div class="cArea">
+                                        <span class="con">반도체경기가 검차 개선되는 반면 국제유가는 당초 예상보다 상승 지난 8월 전망 이후 주요 여건변화를 보면, 예상보다 개선된 요인과 부진한 요인이 함께 나타났다.</span>
+                                        <span class="date">2023.10.24</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="tit"><span>2023년 8월 소비자물가 상승률 반등 요인과 향후 흐름</span></div>
+                                    <div class="cArea">
+                                        <span class="con">작년 하반기 이후 둔화 흐름을 이어가며 지난 7월 2.3%까지 낮아졌던 소비자물가 상승률(전년동원대비 기준)이 8월중 3.4%로 크게 높아지면서 물가 오름세가 다시 확대</span>
+                                        <span class="date">2023.09.05</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- tab-3 end -->
+                </div><!-- left2 end -->
+            </div>
+            <div class="right2">
+                <h3>알림판</h3>
+                <div class="sm-visual">
+                    <!-- 슬라이더 이미지 -->
+                    <section class="single-item slider">
+                        <div>
+                            <img src="images/s_v1.png" alt="house1">
+                        </div>
+                        <div>
+                            <img src="images/s_v2.png" alt="house2">
+                        </div>
+                        <div>
+                            <img src="images/s_v3.png" alt="house3">
+                        </div>
+                        <div>
+                            <img src="images/s_v4.png" alt="house3">
+                        </div>
+                    </section>
+                </div>
+            </div><!-- right2 end -->
+        </div><!-- content2 end -->
+        <div id="content3">
+            <div id="cont3">
+                <h3>미디어센터</h3>
+                <a href="#" class="c3_more"><img src="images/more.png" alt="+ 버튼"></a>
+                <ul class="tabs-2">
+                    <li class="tab-media current" data-tab="mtab-1">총재기자간담회</li>
+                    <li class="tab-media" data-tab="mtab-2">보도자료설명회</li>
+                </ul>
+                <div id="mtab-1" class="mtab-con current">
+                    <a href="#"><img src="images/media_1.jpg" alt="총재기자간담회를 하고 있는 한국은행 총재 이미지"></a>
+                    <p>통화정책방향 관련 총재 기자간담회(2023.10)</p>
+                </div>
+                <div id="mtab-2" class="mtab-con">
+                    <a href="#"><img src="images/media_2.jpg" alt="기자설명회를 하고 있는 한국은행 경제통계국장 이미지"></a>
+                    <p>2023년 3/4분기 실질 국내총생산(속보) 기자설명회</p>
+                </div>
+            </div><!-- cont3 end -->
+            <div id="cont4">
+                <h3>행사 참가 신청</h3>
+                <ul>
+                    <li><a href="#">
+                        <em>2023년 BOK 지역경제 심포지엄 개최 안내</em>
+                        <p>신청 기간 : 2023.10.19~2023.10.31</p>
+                    </a></li>
+                    <li><a href="#">
+                        <em>2023년 한은-대한상의 공동세미나(BOK-KCCI Seminar) 개최 안내</em>
+                        <p>신청기간 : 2023.10.19~2023.10.30</p>
+                    </a></li>
+                    <li><a href="#">
+                        <em>(10.12일(월) 14시까지 조기 마감) 2023년 한국은행 전자금융세미나 개최 안내</em>
+                        <p>신청 기간 : 2023.10.11~2023.10.25</p>
+                    </a></li>
+                    <li><a href="#">
+                        <em>(9/11(월) 14시까지 조기 마감) 2023한국통계학회-한국은행 공동포럼 개최 안내</em>
+                        <p>신청 기간 : 2023.08.29~2023.09.11</p>
+                    </a></li>
+                    <li><a href="#">
+                        <em>「2023년 하반기 경제통계지표 해설 강좌」 실시</em>
+                        <p>신청 기간 : 2023.08.21~2023.09.07</p>
+                    </a></li>
+                </ul>
+            </div><!-- cont4 end -->
+            <div id="cont5">
+                <div class="c_high">
+                    <h3>주요경제지표</h3>
+                    <table>
+                        <caption style="display: none;">주요경제지표</caption>
+                        <colgroup>
+                            <col width="40%">
+                            <col width="20%">
+                            <col width="15%">
+                            <col width="25%">
+                        </colgroup>
+                        <tr>
+                            <td>GDP성장률</td>
+                            <td style="color: #eb3a3a;font-weight: 600;">+0.6</td>
+                            <td style="color: #eb3a3a;font-weight: 600;">+1.4</td>
+                            <td>2023.Q3/4</td>
+                        </tr>
+                        <tr>
+                            <td>소비자물가지수</td>
+                            <td>113.37</td>
+                            <td style="color: #eb3a3a;font-weight: 600;">+3.8</td>
+                            <td>2023.10</td>
+                        </tr>
+                        <tr>
+                            <td>생산자물가지수</td>
+                            <td>121.67</td>
+                            <td style="color: #eb3a3a;font-weight: 600;">+1.3</td>
+                            <td>2023.09</td>
+                        </tr>
+                        <tr>
+                            <td>경상수지</td>
+                            <td>4,810</td>
+                            <td>-</td>
+                            <td>2023.08</td>
+                        </tr>
+                        <tr>
+                            <td>M2(평잔)</td>
+                            <td>3,831</td>
+                            <td style="color: #eb3a3a;font-weight: 600;">+2.2</td>
+                            <td>2023.08</td>
+                        </tr>
+                    </table>
+                </div><!-- high end -->
+                <div class="c_low">
+                    <div class="low_left">
+                        <h3>한국은행<br>기준금리</h3>
+                        <p>3.50<em>%</em></p>
+                    </div>
+                    <div class="low_right">
+                        <h3>물가안정<br>목표</h3>
+                        <p>2.0<em>%</em></p>
+                    </div>
+                </div>
+            </div><!-- cont5 end -->
+        </div><!-- content3 end -->
+    </div><!-- container end -->
+    <div id="footer">
+        <div id="inner">
+            <div class="high">
+                <ul>
+                    <li><a href="#">저작권보호방침</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">홈페이지이용안내</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">관련사이트</a></li>
+                </ul>
+            </div>
+            <div class="low">
+                <h2><a href="#">하단로고</a></h2><!-- background로 logo 넣음 -->
+                <address class="addr">[ 04531 ] 서울특별시 중구 남대문로 39 (남대문로3가) / 대표전화 : 02-759-4114
+                    <a href="#" onclick="pop1('popup.html','pw1',810,500);return false;"><img src="images/rss_pop.png" alt="팝업창으로 들어가는 이미지"></a>
+                </address><!-- popup창 -->
+                <p class="copy">Copyright(c) Bank of Korea. All rights reserved.</p>
+                <a href="#" class="icon"><img src="images/mark_gcs.png" alt="굿콘텐츠서비스 마크"></a>
+            </div>
+        </div><!-- inner end -->
+    </div><!-- footer end -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./slick/slick.js"></script>
+    <script>
+        $(function(){
+            $('.single-item').slick({
+                arrows : false,
+                dots: false,
+                autoplay: true
+            });
+        });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+            },
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
+    <script>
+        // 팝업
+        function pop1(wpop,wname,w,h){
+            window.open(wpop,wname,'width='+w+',height='+h+',top=0,left=0'); //height 길이에 윈도우 창 크기 포함
+        }
+    </script>
+</body>
+</html>
