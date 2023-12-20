@@ -1,0 +1,88 @@
+@import url(common.css);
+
+#container{margin-bottom: 50px;display: flex;}
+#container h2{font-size: 18px;font-weight: 600;color: #333;margin-top: 5px;margin-bottom: 20px;}
+
+/* cont_left */
+.cont_left{flex: 1;}
+
+/* visual */
+.cont_left .visual{background: url(../images/sub2/visual.jpg) no-repeat;height: 410px;}
+.cont_left .visual > h3{padding-top: 30px;padding-left: 20px;font-size: 20px;color: #93b9ff;margin-bottom: 10px;}
+.cont_left .visual > p{font-size: 20px;font-weight: 600;color: #fff;padding-left: 20px;}
+
+/* lowBox */
+.cont_left .lowBox{height: 150px;border-left: 1px solid #ddd;border-bottom: 1px solid #ddd;border-right: 1px solid #ddd;padding: 20px;
+    background: url(../images/sub2/icon1.gif) no-repeat right 20px bottom 30px;}
+.lowBox ul{padding-left: 20px;}
+.lowBox li{list-style: disc;margin-bottom: 5px;}
+.lowBox li::marker{color: #777;font-size: 7px;}
+.lowBox li a{display: block;font-size: 14px;color: #777;}
+.lowBox li a:hover, .lowBox li a:focus{text-decoration: underline;}
+
+/* cont_right */
+.cont_right{flex: 2;}
+
+/* con1 */
+.con1{height: 265px;display: flex;}
+
+/* con1 - half1-1 */
+.con1 .half1-1{flex: 1;padding: 20px;border-bottom: 1px solid #ddd;border-right: 1px solid #ddd;background-color: #f4f6fc;}
+
+.half1-1 .date:after{content: '';display: block;clear: both;}
+.half1-1 .tit{font-size: 17px;color: #4b73bd;background: url(../images/sub2/button.png) no-repeat left 75px bottom 5px;float: left;margin-right: 15px;}
+
+.half1-1 .cal{float: left;background: url(../images/sub2/icon2.gif) no-repeat;width: 200px;height: 110px;}
+.half1-1 .cal .date1{float: left;height: 80px;color: #fff;font-size: 22px;margin-top: 10px;margin-left: 20px;text-align: center;}
+.half1-1 .cal .date1 > em{font-size: 36px;font-style: normal;font-weight: 600;}
+.half1-1 .cal .date2{float: left;height: 50px;color: #fff;margin-left: 45px;font-size: 46px;font-weight: 600;margin-top: 5px;width: 50px;}
+.half1-1 .cal .date3{float: left;height: 30px;margin-left: 45px;font-size: 18px;color: #fff;margin-top: 3px;}
+
+.half1-1 .cal_list{height: 50px;margin-top: 20px;border-top: 1px dashed #ddd;padding-top: 20px;}
+.half1-1 .cal_list li{float: left;list-style: disc;margin-left: 15px;}
+.half1-1 .cal_list li:last-child{margin-left: 100px;}
+.half1-1 .cal_list li::marker{font-size: 7px;color: #777;}
+.half1-1 .cal_list li a{display: block;font-size: 14px;color: #333;}
+.half1-1 .cal_list li a:hover, .half1-1 .cal_list li a:focus{text-decoration: underline;color: #4b73bd;}
+
+/* con1 - half1-2 */
+.con1 .half1-2{flex: 1;padding: 20px;border-bottom: 1px solid #ddd;border-right: 1px solid #ddd;}
+.half1-2 ul{width: 100%;}
+.half1-2 ul li{float: left;width: 48%;margin-right: 2%;}
+
+.half1-2 ul li a{position: relative;}
+.half1-2 ul li:first-child a{/*background: url(../images/sub_page/sub2_icon3-1.gif) no-repeat left 45px top 30px;*/display: block;height: 160px;}
+
+.half1-2 ul li:last-child{margin-right: 0;}
+.half1-2 ul li:last-child a{display: block;/*background: url(../images/sub_page/sub2_icon3-2.gif) no-repeat left 45px top 30px;*/height: 160px;}
+
+.half1-2 ul li a .ima{border: 2px solid #eee;height: 160px;width: 100%;box-sizing: border-box;}
+.half1-2 ul li a .ima  img{padding-left: 40px;padding-top: 30px;}
+.half1-2 ul li a:hover .ima{border: 2px solid #597bbb;}
+
+.half1-2 ul li a .txt{position: absolute;bottom: 0;height: 35px;background-color: #597bbb;width: 100%;}
+.half1-2 ul li a .txt p{text-align: center;color: #fff;font-size: 14px;line-height: 35px;background: url(../images/sub2/plus.gif) no-repeat right 35px bottom 10px;}
+
+/* con2 */
+.con2{height: 145px;display: flex;}
+.con2 .half2{flex: 1;padding: 20px;border-bottom: 1px solid #ddd;border-right: 1px solid #ddd;position: relative;}
+.con2 .half2:first-child{background: url(../images/sub2/icon4.gif) no-repeat right 20px bottom 30px;}
+.con2 .half2:last-child{background: url(../images/sub2/icon5.gif) no-repeat right 20px bottom 30px;}
+
+.half2 > a{font-size: 13px;color: #3c5fa0;position: absolute;left: 25px;bottom: 30px;}
+
+/* con3 */
+.con3{height: 190px;display: flex;border-bottom: 1px solid #ddd;}
+.con3 .half3-1{flex: 1;padding: 20px;border-right: 1px solid #ddd;background: url(../images/sub2/icon6.gif) no-repeat right 20px bottom 30px;}
+.half3-1 li{list-style: disc;margin-left: 20px;margin-bottom: 5px;}
+.half3-1 li::marker{font-size: 7px;color: #777;}
+.half3-1 li a{display: block;font-size: 14px;color: #777;}
+.half3-1 li a:hover, .half3-1 li a:focus{text-decoration: underline;}
+
+.con3 .half3-2{flex: 1;padding: 20px;border-right: 1px solid #ddd;}
+.half3-2 ul{width: 100%;padding-top: 5px;}
+.half3-2 li{list-style: disc;width: 44%;margin-left: 3%;float: left;margin-bottom: 5px;}
+.half3-2 li:last-child{list-style: none;}
+.half3-2 li::marker{font-size: 7px;color: #777;}
+.half3-2 li a{display: block;font-size: 14px;color: #777;}
+.half3-2 li a:hover, .half3-2 li a:focus{text-decoration: underline;}
