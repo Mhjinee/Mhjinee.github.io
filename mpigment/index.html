@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피그먼트</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet"  href="slick/slick-theme.css">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #collection .swiper-slide {
+      width: 80%;
+    }
+
+    .new .swiper-slide{width: 45%;}
+  </style>
+    <style>
+        * {    box-sizing: border-box;    }
+       .slider {width: 100%; margin: 0 auto;  }
+       .slick-slide {    margin:0;    }
+   
+       .slick-slide img { width: 100%; height: 100%;  }
+   
+       .slick-prev:before,
+       .slick-next:before {
+         color: black;
+       }
+       .slick-slide {
+         transition: all ease-in-out .3s;
+         opacity: .2;
+       } 
+       .slick-active {    opacity: 1;    }
+       .slick-current {     opacity: 1;   }
+
+       .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .up{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="js/fullmenu.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/company.js"></script>
+</head>
+<body>
+    <div id="tbanner">
+        <!-- 위아래로 전환되는 슬라이더 -->
+        <section class="single-item slider">
+            <div><img src="images/banner1.jpeg" alt="세일이벤트 광고배너"></div>
+            <div><img src="images/banner2.gif" alt="카카오톡 ,간편가입 이벤트 광고배너"></div>
+        </section>
+    </div><!-- T_banner end -->
+    <div id="header">
+        <h2><a href="index.html">피그먼트 로고</a></h2>
+        <div class="menu">
+            <a href="#"><img src="images/menu.png" alt="menu"></a>
+        </div>
+        <div class="search">
+            <a href="#"><img src="images/search.png" alt="search"></a>
+        </div>
+        <div class="cart">
+            <a href="#"><img src="images/cart.png" alt="shopping cart"></a>
+        </div>
+        <div class="my">
+            <a href="#"><img src="images/person.png" alt="my_page"></a>
+        </div>
+    </div><!-- header end -->
+    <div id="gnb">
+        <ul>
+            <li><a href="#">신상 30%</a></li>
+            <li><a href="#">BEST 50%</a></li>
+            <li><a href="#">[T:RENDY]</a></li>
+            <li><a href="#">SALE</a></li>
+            <li><a href="#">1+1기획전</a></li>
+            <li class="full"><a href="#" onclick="return false;"><img src="images/expand_more.png" alt="more"></a></li>
+            <li class="close"><a href="#" onclick="return false;"><img src="images/expand_less.png" alt="less"></a></li>
+        </ul>
+        <div class="fullmenu"><!-- more버튼 누르면 w100%로 나타남 -->
+            <ul>
+                <li><a href="#" style="color: #00b347;font-weight: 600;">신상 30%</a></li>
+                <li><a href="#">BEST 50%</a></li>
+                <li><a href="#">[T:RENDY]</a></li>
+                <li><a href="#" style="color: #ff2b2b;font-weight: 600;">SALE</a></li>
+                <li><a href="#">1+1기획전</a></li>
+                <li><a href="#">오프라인베스트</a></li>
+                <li><a href="#">TOP</a></li>
+                <li><a href="#">KNIT</a></li>
+                <li><a href="#">BOTTOM</a></li>
+                <li><a href="#">DRESS/SKIRT</a></li>
+                <li><a href="#">SHIRT/BLOUSE</a></li>
+                <li><a href="#">OUTER</a></li>
+                <li style="margin-bottom: 0;"><a href="#">투데이특가</a></li>
+                <li style="margin-bottom: 0;"><a href="#">PFS:GALLERY</a></li>
+                <li style="margin-bottom: 0;"><a href="#">CODI SET</li>
+            </ul>
+        </div>
+    </div><!-- gnb end -->
+    <div id="visual">
+        <!-- visual 슬라이더 -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/visual1.jpeg" alt="신상"></div>
+                <div class="swiper-slide"><img src="images/visual2.jpg" alt="룩북 광고"></div>
+            </div>
+        </div>
+    </div><!-- visual end -->
+    <div id="container"><!-- w100% 아님 -->
+        <div class="week">
+            <div class="tit">
+                <h2>WEEKLY BEST</h2>
+                <p><a href="#">view more +</a></p>
+            </div>
+            <div class="w_list">
+                <ul class="tabs">
+                    <li class="w-tab current" data-tab="best">BEST</li>
+                    <li class="w-tab" data-tab="knit">KNIT</li>
+                    <li class="w-tab" data-tab="off">OFFLINE BEST</li>
+                    <li class="w-tab" data-tab="top">TOP</li>
+                    <li class="w-tab" data-tab="shirts">SHIRTS</li>
+                    <li class="w-tab" data-tab="pants">PANTS</li>
+                </ul>
+                <div id="best" class="tab-cont current">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/best/best_01.gif" alt="best_01"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]워싱도그와펜NB</span>
+                                <p class="sale">16%<em>40,000</em></p>
+                                <p class="price">33,600</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/best/best_02.gif" alt="best_02"></a>
+                            <div class="prod">
+                                <span>[1+1][T:RENDY]소프날나리기모T</span>
+                                <p class="sale">50%<em>24,000</em></p>
+                                <p class="price">12,000</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/best/best_03.gif" alt="best_03"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]자수골덴카라NB</span>
+                                <p class="sale">30%<em>42,000</em></p>
+                                <p class="price">29,400</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/best/best_04.gif" alt="best_04"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]믹스크롭NB</span>
+                                <p class="sale">30%<em>44,000</em></p>
+                                <p class="price">30,800</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/best/best_05.gif" alt="best_05"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]보카시배색CD</span>
+                                <p class="sale">30%<em>62,000</em></p>
+                                <p class="price">43,400</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/best/best_06.gif" alt="best_06"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]골지반하이NT</span>
+                                <p class="sale">30%<em>36,000</em></p>
+                                <p class="price">25,200</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="knit" class="tab-cont">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/knit/knit_01.gif" alt="1"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]보카시배색VJ</span>
+                                <p class="sale">5%<em>30,000</em></p>
+                                <p class="price">28,500</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/knit/knit_02.gif" alt="2"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]ST단반하이NT</span>
+                                <p class="sale">30%<em>36,000</em></p>
+                                <p class="price">25,200</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/knit/knit_03.gif" alt="3"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]피셔배색라운드</span>
+                                <p class="sale">30%<em>72,000</em></p>
+                                <p class="price">50,400</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/knit/knit_04.gif" alt="4"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]보카라운드R</span>
+                                <p class="sale">30%<em>49,000</em></p>
+                                <p class="price">34,300</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/knit/knit_05.gif" alt="5"></a>
+                            <div class="prod">
+                                <span>[오프라인베스트]나그랑눈꽃CD</span>
+                                <p class="price">52,000</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/knit/knit_06.gif" alt="6"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]피셔리본CD</span>
+                                <p class="sale">30%<em>70,000</em></p>
+                                <p class="price">49,000</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="off" class="tab-cont">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/offline/off_01.gif" alt="1"></a>
+                            <div class="prod">
+                                <span>[오프라인베스트]골덴밴드끈PT</span>
+                                <p class="price">46,000</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/offline/off_02.gif" alt="2"></a>
+                            <div class="prod">
+                                <span>리버시블립빠JP</span>
+                                <p class="price">72,000</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/offline/off_03.gif" alt="3"></a>
+                            <div class="prod">
+                                <span>[오프라인베스트]속기모반밴딩DP</span>
+                                <p class="price">54,000</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/offline/off_04.gif" alt="4"></a>
+                            <div class="prod">
+                                <span>[오프라인베스트]라운드넥퀄팅JP</span>
+                                <p class="price">98,000</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/offline/off_05.gif" alt="5"></a>
+                            <div class="prod">
+                                <span>[오프라인베스트]언발기모포켓DP</span>
+                                <p class="price">46,000</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/offline/off_06.gif" alt="6"></a>
+                            <div class="prod">
+                                <span>[오프라인베스트]뽀글이버튼VT</span>
+                                <p class="price">39,000</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="top" class="tab-cont">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/top/top_01.gif" alt="1"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]기모프랑포켓MTM</span>
+                                <p class="sale">30%<em>50,000</em></p>
+                                <p class="price">35,000</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/top/top_02.gif" alt="2"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]기모겹브이MTM</span>
+                                <p class="sale">30%<em>52,000</em></p>
+                                <p class="price">36,400</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/top/top_03.gif" alt="3"></a>
+                            <div class="prod">
+                                <span>[오프라인베스트]기모프렌패치MTM</span>
+                                <p class="price">48,000</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/top/top_04.gif" alt="4"></a>
+                            <div class="prod">
+                                <span>[오프라인베스트분또기본레터링T</span>
+                                <p class="price">24,000</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/top/top_05.gif" alt="5"></a>
+                            <div class="prod">
+                                <span>[1+1][T:RENDY]소프날나리기모T</span>
+                                <p class="sale">50%<em>24,000</em></p>
+                                <p class="price">12,000</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/top/top_06.gif" alt="6"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]골지반하이NT</span>
+                                <p class="sale">30%<em>36,000</em></p>
+                                <p class="price">25,200</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="shirts" class="tab-cont">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/shirts/sh_01.gif" alt="1"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]워싱도그와펜NB</span>
+                                <p class="sale">16%<em>40,000</em></p>
+                                <p class="price">33,600</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/shirts/sh_02.gif" alt="2"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]소프잔골세라BL</span>
+                                <p class="sale">30%<em>45,000</em></p>
+                                <p class="price">31,500</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/shirts/sh_03.gif" alt="3"></a>
+                            <div class="prod">
+                                <span>잔체크베이직NB</span>
+                                <p class="sale">49%<em>30,000</em></p>
+                                <p class="price">15,200</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/shirts/sh_04.gif" alt="4"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]베어와펜골덴NB</span>
+                                <p class="sale">30%<em>46,000</em></p>
+                                <p class="price">32,200</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/shirts/sh_05.gif" alt="5"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]믹스크롭NB</span>
+                                <p class="sale">30%<em>44,000</em></p>
+                                <p class="price">30,800</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/shirts/sh_06.gif" alt="6"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]자수골덴카라NB</span>
+                                <p class="sale">30%<em>42,000</em></p>
+                                <p class="price">29,400</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="pants" class="tab-cont">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/pants/p_01.gif" alt="1"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]버튼비조골덴PT</span>
+                                <p class="sale">30%<em>62,000</em></p>
+                                <p class="price">43,400</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/pants/p_02.gif" alt="2"></a>
+                            <div class="prod">
+                                <span>[오프라인베스트]워싱트월기모PT</span>
+                                <p class="price">51,000</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/pants/p_03.gif" alt="3"></a>
+                            <div class="prod">
+                                <span>워싱컬러비조PT</span>
+                                <p class="sale">50%<em>46,000</em></p>
+                                <p class="price">23,0000</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/pants/p_04.gif" alt="4"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]모직트월밴딩PT</span>
+                                <p class="sale">18%<em>50,000</em></p>
+                                <p class="price">40,600</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/pants/p_05.gif" alt="5"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]양포켓골덴PT</span>
+                                <p class="sale">30%<em>64,000</em></p>
+                                <p class="price">44,800</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/pants/p_06.gif" alt="6"></a>
+                            <div class="prod">
+                                <span>[T:RENDY]버튼비조DP</span>
+                                <p class="sale">14%<em>50,000</em></p>
+                                <p class="price">37,700</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- week end -->
+        <div class="today">
+            <div class="sub_tit">
+                <p><a href="#">view more +</a></p>
+            </div>
+            <div class="tit">
+                <div class="txt">
+                    <p class="s_h2">TODAY TIME SALE</p>
+                    <h2>24시간 실시간 타임특가</h2>
+                </div>
+                <div class="count">
+                    <div class="time">
+                        <span class="hours"></span>
+                        <span class="col">:</span>
+                        <span class="minutes"></span>
+                        <span class="col">:</span>
+                        <span class="seconds"></span>
+                    </div><!-- 카운트다운 들어감 -->
+                </div>
+            </div>
+            <div class="t_list">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/today_01.jpg" alt="today1"></a>
+                        <div class="prod">
+                            <p>[투데이특가]모직포켓</p>
+                            <div class="price">
+                                <span>60%</span>
+                                <span class="sale">51,000</span>
+                                <span>20,000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/today_02.jpg" alt="today2"></a>
+                        <div class="prod">
+                            <p>[투데이특가]넷홀꽈카라NT</p>
+                            <div class="price">
+                                <span>50%</span>
+                                <span class="sale">41,000</span>
+                                <span>20,500</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/today_03.jpg" alt="today3"></a>
+                        <div class="prod">
+                            <p>[투데이특가]워싱컬러비조PT</p>
+                            <div class="price">
+                                <span>50%</span>
+                                <span class="sale">46,000</span>
+                                <span>23,000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/today_04.jpg" alt="today4"></a>
+                        <div class="prod">
+                            <p>[투데이특가]버클플리츠SK</p>
+                            <div class="price">
+                                <span>40%</span>
+                                <span class="sale">57,000</span>
+                                <span>34,200</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- today end -->
+        <div class="trendy">
+            <div class="tit">
+                <h2>RECOMMEND ITEM</h2>
+                <p><a href="#">view more +</a></p>
+            </div>
+            <div class="dy_list">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/trendy_01.gif" alt="trendy1"></a>
+                        <div class="prod">
+                            <p>[T:RENDY]골지반하이NT</p>
+                            <div class="price">
+                                <span>30%</span>
+                                <span class="sale">36,000</span>
+                                <span>25,200</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/trendy_02.gif" alt="trendy2"></a>
+                        <div class="prod">
+                            <p>[T:RENDY]믹스크롭NB</p>
+                            <div class="price">
+                                <span>30%</span>
+                                <span class="sale">44,000</span>
+                                <span>30,800</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/trendy_03.gif" alt="trendy3"></a>
+                        <div class="prod">
+                            <p>[1+1][T:RENDY]소프날나리기모T</p>
+                            <div class="price">
+                                <span>50%</span>
+                                <span class="sale">24,000</span>
+                                <span>12,000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/trendy_04.gif" alt="trendy4"></a>
+                        <div class="prod">
+                            <p>[T:RENDY]카라단자수NT</p>
+                            <div class="price">
+                                <span>30%</span>
+                                <span class="sale">50,000</span>
+                                <span>35,000</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- trendy end -->
+        <div id="collection">
+            <!-- 슬라이더 -->
+            <div class="tit">
+                <h2>PIGMENT BEST COLLECTION</h2>
+                <p><a href="#">view more +</a></p>
+            </div>
+            <div class="swiper collSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/collection/collection_01.jpeg" alt="gallery"></a>
+                        <div class="intro">
+                            <h3>PFS:GALLERY</h3>
+                            <span>
+                                PFS:GALLERY는 대한민국의 근현대 작가들과 함께 한국의 예술 문화유산을 지켜갈 공간을 이룩해나갑니다.<br>
+                                성수에서는 매달 새로운 작품 관람과 시그니처 커피를 함께 즐길 수 있습니다. 1층부터 5층까지의 공간마다 다른 전시와 컨셉, 음악과 향에
+                                각자의 메세지가 담겨있습니다. 수장고(용인)에서는 PFS갤러리와 함께 기획 전시를 진행한 작가님들의 작품을 보관하고 있습니다.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/collection/collection_02.jpeg" alt="Shirt collection"></a>
+                        <div class="intro">
+                            <h3>Shirt collection</h3>
+                            <span>
+                                10년 동안 다져온 피그먼트의 노하우와 수천 명의 고객님들께 인증을 받은 누적 판매 10만 장의 셔츠 컬렉션. 높은 쿼리티의 원단과 봉제 법.<br>
+                                피그먼트만의 염색 컬러를 입혀 만든 언제입어도 변함없이 편안한 프리미엄 셔츠입니다. 온/오프라인에서 검증받은 최적화된 핏을 찾기 위해
+                                디자이너들의 수차례 피팅과 샘픙을 거쳐 제작하였습니다.<br>피그먼트는 일상 속에서의 편안함과 자연스러움의 조화를 추구합니다.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/collection/collection_03.jpeg" alt="Up to 70% sale"></a>
+                        <div class="intro">
+                            <h3>Up to 70% sale</h3>
+                            <span>
+                                매일 업데이트되는 피그먼트 SALE COLLECTION<br>최대 70% 할인 가격으로, 오직 한정 수량으로만 진행하는 특가 이벤트입니다.<br>
+                                재고소진 시 품절되오니 최대 70% 특별 할인 찬스를 놓치지 마세요.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/collection/collection_04.jpeg" alt="Knit collection"></a>
+                        <div class="intro">
+                            <h3>Knit collection</h3>
+                            <span>
+                                피그먼트 니트 컬렉션. <br>피그먼트만의 색삼과 디자인으로 풀어낸 뉴시즌 니트 컬렉션입니다. <br>
+                                다양하게 스타일링이 가능한 니트, 베스트, 카디건. 심플한 솔리드 디자인부터 유니크한 포인트 패턴까지. <br>
+                                피그먼트가 선보이는 뉴 시즌 니트웨어를 만나보세요.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/collection/collection_05.jpeg" alt="Off-line best"></a>
+                        <div class="intro">
+                            <h3>Off-line best</h3>
+                            <span>
+                                전국의 매장에서 고객님들이 직접 착용 해보고 선택한 베스트 아이템 컬렉션입니다. 고객님들의 의견과 니즈를 바로 반영하여 수정한 검증된 핏과 원단,
+                                디자인으로 제작되었습니다. 시간이 지나도 변하지 않을 가치. <br>피그먼트의 아이덴티티로 손쉽게 다가갈 수 있는 편안하고 자연스러운 감성을 담았습니다.
+                                높은 퀄리티의 옷을 보다 합리적인 가격으로 제공합니다. 오프라인 베스트 아이템을 온라인으로 손쉽게 구매해 보세요
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/collection/collection_06.jpeg" alt="1+1 One plus One"></a>
+                        <div class="intro">
+                            <h3>1+1 One plus One</h3>
+                            <span>
+                                시즌 베스트 아이템을 다채러운 컬러로 1+1으로 구매할 수 있는 스페셜 이벤트. <br>레이어드하기 좋은 이너 아이템부터, 프리미엄 원단의 셔츠웨어,
+                                다양한 컬러웨이의 니트웨어까지- 하나만 사기 아쉬웠던 고객님을 위해 준비한 피그먼트 1+1 COLLECTION.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div><!-- collection end -->
+        <div class="new">
+            <div class="tit">
+                <h2>TODAY NEW</h2>
+                <p><a href="#">view more +</a></p>
+            </div>
+            <div class="n_list">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/new/new_01.gif" alt="new1"></a>
+                        <div class="prod">
+                            <p>[T:RENDY]워싱도그와펜NB</p>
+                            <div class="price">
+                                <span>16%</span>
+                                <span class="sale">40,000</span>
+                                <span>33,600</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/new/new_02.gif" alt="new2"></a>
+                        <div class="prod">
+                            <p>[오프라인베스트]웰론퀄팅배색VT</p>
+                            <div class="price">
+                                <span>58,000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/new/new_03.gif" alt="new3"></a>
+                        <div class="prod">
+                            <p>[오프라인베스트]기모프렌패치MTM</p>
+                            <div class="price">
+                                <span>48,000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/new/new_04.gif" alt="new4"></a>
+                        <div class="prod">
+                            <p>[오프라인베스트]사각배기DP</p>
+                            <div class="price">
+                                <span>49,000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/new/new_05.gif" alt="new5"></a>
+                        <div class="prod">
+                            <p>[오프라인베스트]뽀글이버튼VT</p>
+                            <div class="price">
+                                <span>39,000</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/new/new_06.gif" alt="new6"></a>
+                        <div class="prod">
+                            <p>[오프라인베스트]워싱트월기모PT</p>
+                            <div class="price">
+                                <span>51,000</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="n_slide">
+                <div class="swiper newSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/new/new_07.gif" alt="new7"></a>
+                            <div class="prod">
+                                <p>레터링자카드R</p>
+                                <div class="price">
+                                    <span>50%</span>
+                                    <span class="sale">42,000</span>
+                                    <span>21,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/new/new_08.gif" alt="new8"></a>
+                            <div class="prod">
+                                <p>모직인밴딩PT</p>
+                                <div class="price">
+                                    <span>42,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/new/new_09.gif" alt="new9"></a>
+                            <div class="prod">
+                                <p>[T:RENDY]피셔배색라운드</p>
+                                <div class="price">
+                                    <span>30%</span>
+                                    <span class="sale">72,000</span>
+                                    <span>50,400</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/new/new_10.gif" alt="new10"></a>
+                            <div class="prod">
+                                <p>워싱데님패치MTM</p>
+                                <div class="price">
+                                    <span>50%</span>
+                                    <span class="sale">39,000</span>
+                                    <span>19,500</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/new/new_11.gif" alt="new11"></a>
+                            <div class="prod">
+                                <p>[오프라인베스트]트위드반팔R</p>
+                                <div class="price">
+                                    <span>27,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/new/new_12.gif" alt="new12"></a>
+                            <div class="prod">
+                                <p>보카시레터링CD</p>
+                                <div class="price">
+                                    <span>52,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/new/new_13.gif" alt="new13"></a>
+                            <div class="prod">
+                                <p>[오프라인베스트]보카시와펜V</p>
+                                <div class="price">
+                                    <span>42,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/new/new_14.gif" alt="new14"></a>
+                            <div class="prod">
+                                <p>[오프라인베스트]덤블무스탕JP(light beige)</p>
+                                <div class="price">
+                                    <span>116,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/new/new_15.gif" alt="new15"></a>
+                            <div class="prod">
+                                <p>[오프라인베스트]모던반하이T</p>
+                                <div class="price">
+                                    <span>22,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </div><!-- new -->
+        <div class="event">
+            <h2>PIGMENT EVENT</h2>
+            <div class="e_slide">
+                <div class="swiper eventSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/coupon.jpeg" alt="coupon"></a>
+                            <div class="intro">
+                                <h3>APP DOWN LOAD</h3>
+                                <span>피그먼트 앱 다운로드시 즉시 사용 가능한 10%쿠폰 발급</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/sale.jpeg" alt="member"></a>
+                            <div class="intro">
+                                <h3>NEW MEMBER</h3>
+                                <span>신규회원 가입시 즉시 사용 가능한 10% 할인쿠폰 발급</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/best50.jpeg" alt="best 50"></a>
+                            <div class="intro">
+                                <h3>BEST 50</h3>
+                                <span>지금, 피그먼트 온오프 베스트 상품들</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/upto70.jpeg" alt="up to 70~"></a>
+                            <div class="intro">
+                                <h3>UP TO 70~SALE</h3>
+                                <span>지금 온라인에서만 만날 수 있는 특별한 신상 세일</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </div><!-- event end -->
+    </div><!-- container end -->
+    <div id="footer">
+        <div class="icons">
+            <ul>
+                <li class="first"><a href="#">
+                    <img src="images/footer_icon01.jpg" alt="notice">
+                    <p>NOTICE</p>
+                </a></li>
+                <li class="first"><a href="#">
+                    <img src="images/footer_icon02.jpg" alt="q&a">
+                    <p>Q&A</p>
+                </a></li>
+                <li class="first"><a href="#">
+                    <img src="images/footer_icon03.jpg" alt="review">
+                    <p>REVIEW</p>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/footer_icon04.jpg" alt="오프라인베스트">
+                    <p>오프라인<br>베스트</p>
+                </a></li>
+                <li class="last"><a href="#">
+                    <img src="images/footer_icon05.jpg" alt="배송조회">
+                    <p>배송조회</p>
+                </a></li>
+                <li class="last"><a href="#">
+                    <img src="images/footer_icon06.jpg" alt="마이쇼핑">
+                    <p>마이쇼핑</p>
+                </a></li>
+                <li class="last"><a href="#">
+                    <img src="images/footer_icon07.jpg" alt="대리점문의">
+                    <p>대리점문의</p>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/footer_icon08.jpg" alt="오프라인매장">
+                    <p>오프라인매장</p>
+                </a></li>
+            </ul>
+        </div><!-- icons end -->
+        <div id="inner">
+            <div id="store">
+                <div class="sub_tit">
+                    <p>전국 50여개 이상의 오프라인매장</p>
+                    <p><a href="#">view more +</a></p>
+                </div>
+                <h2>OFFLINE STORE</h2>
+                <!-- 슬라이더 -->
+                <section class="center slider">
+                    <div><img src="images/store/store_01.jpg" alt="고양 스타필드"></div>
+                    <div><img src="images/store/store_02.jpeg" alt="양주 스퀘어"></div>
+                    <div><img src="images/store/store_03.jpeg" alt="대구 공평점"></div>
+                    <div><img src="images/store/store_04.jpeg" alt="동부산 롯데"></div>
+                    <div><img src="images/store/store_05.jpeg" alt="창원 롯데"></div>
+                    <div><img src="images/store/store_06.jpeg" alt="안성 스타필드"></div>
+                </section>
+            </div><!-- store end -->
+            <div class="contact"><!--flex로 나눔  -->
+                <div class="call">
+                    <p>CALL CENTER</p>
+                    <h3>1668.3189</h3>
+                    <div>
+                        <p>평일 : 10:00~17:00</p>
+                        <p>점심 : 13:00~14:00</p>
+                        <p>주말/공휴일 휴무</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>BANK INFO</p>
+                    <p>예금주 : 주식회사 씨피에프엘씨리테일</p>
+                    <p>하나은행</p>
+                    <p>359-910028-07304</p>
+                </div>
+            </div>
+            <div class="guide">
+                <ul>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">AGREEMENT</a></li>
+                    <li><a href="#">PC.VER</a></li>
+                </ul>
+            </div>
+        </div><!-- inner end -->
+        <!-- company 부분은 따로 만들기 -->
+        <div class="company">
+            <div class="com">
+                <p>COMPANY</p>
+                <a href="#" class="more" onclick="return false;">▽</a>
+                <a href="#" class="less" onclick="return false;">△</a>
+            </div>
+            <div class="pany">
+                <p>COMPANY<em>주식회사 씨피에프엘씨리테일</em></p>
+                <p>OWNER<em>kim nam-il</em></p>
+                <p>PRIVACY MANAGER<em>고객센터(pigment.help@cpflc.co.kr)</em></p>
+                <p>ADDRESS<em>17017 경기도 용인시 처인구 중부대로 1087(삼가동) 케이컴퍼니</em></p>
+                <p>BUSINESS LICENSE<em>209-81-59688</em></p>
+                <p>MAIL ORDER LICENSE<em>209-81-59688</em></p>
+                <p>ㅡ</p>
+            </div>
+        </div>
+    </div><!-- footer end -->
+    <script src="./slick/slick.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        // visual slider
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+
+        // collection slider
+        var swiper = new Swiper(".collSwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 5,
+            loop: true,
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: true,
+            },
+        });
+
+        // new slider
+        var swiper = new Swiper(".newSwiper", {
+            slidesPerView: "auto",
+            centeredSlides: false,
+            spaceBetween: 5,
+            loop: true,
+            scrollbar: {
+                el: ".swiper-scrollbar",
+            },
+        });
+
+        // event slider
+        var swiper = new Swiper(".eventSwiper", {
+            slidesPerView: 2,
+            spaceBetween: 5,
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: true,
+            },
+        });
+    </script>
+    <script>
+        // t_banner slider
+        $(function(){
+            $('.single-item').slick({
+                vertical : true,
+                arrows : false,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
+        });
+
+        // store slider
+        $('.center').slick({
+            centerMode: true,
+            centerPadding: '80px',
+            slidesToShow: 1,
+            arrows : false,
+        });
+    </script>
+    <script>//scroll 했을 때 menu 고정
+        window.onscroll = function() {myFunction()};
+        
+        var gnb = document.getElementById("gnb");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            gnb.classList.add("sticky");
+          } else {
+            gnb.classList.remove("sticky");
+          }
+        }
+    </script>
+    <script> //타이머
+        function remaindTime() {
+            var now = new Date();
+            var end = new Date(now.getFullYear(),now.getMonth(),now.getDate(),24,00,00);
+            var open = new Date(now.getFullYear(),now.getMonth(),now.getDate(),24,00,00);
+        
+            var nt = now.getTime();
+            var ot = open.getTime();
+            var et = end.getTime();
+        
+        if(nt<ot){
+            $(".time").fadeIn();
+            sec =parseInt(ot - nt) / 1000;
+            day  = parseInt(sec/60/60/24);
+            sec = (sec - (day * 60 * 60 * 24));
+            hour = parseInt(sec/60/60);
+            sec = (sec - (hour*60*60));
+            min = parseInt(sec/60);
+            sec = parseInt(sec-(min*60));
+            if(hour<10){hour="0"+hour;}
+            if(min<10){min="0"+min;}
+            if(sec<10){sec="0"+sec;}
+            $(".hours").html(hour);
+            $(".minutes").html(min);
+            $(".seconds").html(sec);
+        } else if(nt>et){
+            $(".time").fadeOut();
+        }else {
+            $(".time").fadeIn();
+            sec =parseInt(et - nt) / 1000;
+            day  = parseInt(sec/60/60/24);
+            sec = (sec - (day * 60 * 60 * 24));
+            hour = parseInt(sec/60/60);
+            sec = (sec - (hour*60*60));
+            min = parseInt(sec/60);
+            sec = parseInt(sec-(min*60));
+            if(hour<10){hour="0"+hour;}
+            if(min<10){min="0"+min;}
+            if(sec<10){sec="0"+sec;}
+            $(".hours").html(hour);
+            $(".minutes").html(min);
+            $(".seconds").html(sec);
+        }
+        }
+        setInterval(remaindTime,1000);
+    </script>
+</body>
+</html>
