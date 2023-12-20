@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비에스 종합병원</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet"  href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/respond.css">
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/allmenu.js"></script>
+    <script src="js/search.js"></script>
+    <style>
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+    
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+    </style>
+    <style>
+        .slick-slide img { width: 100%; height:100%;  }
+    
+        .slick-prev:before,
+        .slick-next:before {
+          color: black;
+        }
+        .slick-slide {
+          transition: all ease-in-out .3s;
+          opacity: 1;
+          margin-right: 20px;
+        }
+        .content2 .slick-slide{
+            width: 220px;
+            height: 160px;margin-top: 20px;background-color: #fff;
+            position: relative;
+        } 
+        .slick-active {    opacity: 1;    }
+        .slick-current {     opacity: 1;   }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="allmenu">
+        <div class="inner">
+            <a href="#allmenu_close" class="menu_close"><img src="images/close.png" alt="전체메뉴 닫기"></a>
+            <div class="full">
+                <div class="main">
+                    <h3>진료과소개</h3>
+                    <ul>
+                        <li><a href="#">신경외과</a></li>
+                        <li><a href="#">정형외과</a></li>
+                        <li><a href="#">내과</a></li>
+                        <li><a href="#">신장내과</a></li>
+                        <li><a href="#">소아청소년과</a></li>
+                        <li><a href="#">외과</a></li>
+                        <li><a href="#">치과</a></li>
+                        <li><a href="#">산부인과</a></li>
+                        <li><a href="#">영상의학과</a></li>
+                        <li><a href="#">마취통증의학과</a></li>
+                        <li><a href="#">진단검사의학과</a></li>
+                        <li><a href="#">응급의학과</a></li>
+                        <li><a href="#">피부비뇨기과</a></li>
+                        <li><a href="#">흉부외과</a></li>
+                        <li><a href="#">인과</a></li>
+                        <li><a href="#">가정의학과</a></li>
+                        <li><a href="#">이비인후과</a></li>
+                        <li><a href="#">한방과</a></li>
+                        <li><a href="#">신경과</a></li>
+                    </ul>
+                </div>
+                <div class="main">
+                    <h3>특화센터안내</h3>
+                    <ul>
+                        <li><a href="#">손저림센터</a></li>
+                        <li><a href="#">관절센터</a></li>
+                        <li><a href="#">외상센터</a></li>
+                        <li><a href="#">뇌혈관센터</a></li>
+                        <li><a href="#">척추센터</a></li>
+                        <li><a href="#">항노화센터</a></li>
+                        <li><a href="#">통증센터</a></li>
+                        <li><a href="#">소화기ㆍ내분비센터</a></li>
+                        <li><a href="#">심장혈관센터</a></li>
+                        <li><a href="#">대장항문센터</a></li>
+                        <li><a href="#">물리치료센터</a></li>
+                        <li><a href="#">안성형ㆍ피부미용센터</a></li>
+                        <li><a href="#">이비인후과센터</a></li>
+                        <li><a href="#">내시경센터</a></li>
+                        <li><a href="#">건강증진센터</a></li>
+                        <li><a href="#">인공신장센터</a></li>
+                        <li><a href="#">여성의학센터</a></li>
+                        <li><a href="#">응급의료센터</a></li>
+                        <li><a href="#">치과센터</a></li>
+                        <li><a href="#">한방의학센터</a></li>
+                    </ul>
+                </div>
+                <div class="main">
+                    <h3>병원이용안내</h3>
+                    <ul>
+                        <li><a href="#">병원이용안내</a></li>
+                        <li><a href="#">진료시간 안내</a></li>
+                        <li><a href="#">진료예약 안내</a></li>
+                        <li><a href="#">비급여내역 안내</a></li>
+                        <li><a href="#">병원절차 안내</a></li>
+                        <li><a href="#">전화번호 안내</a></li>
+                        <li><a href="#">층별 안내</a></li>
+                        <li><a href="#">찾아오시는 길</a></li>
+                        <li><a href="#">고객중심 안내</a></li>
+                        <li><a href="#">장례식장 안내</a></li>
+                    </ul>
+                </div>
+                <div class="main">
+                    <h3>병원소개</h3>
+                    <ul>
+                        <li><a href="#">병원소개</a></li>
+                        <li><a href="#">병원장 인사말</a></li>
+                        <li><a href="#">미션&비전</a></li>
+                        <li><a href="#">병원 조직도</a></li>
+                        <li><a href="#">병원 연혁</a></li>
+                        <li><a href="#">의료장비 소개</a></li>
+                        <li><a href="#">병원소식</a></li>
+                        <li><a href="#">언론보도</a></li>
+                        <li><a href="#">채용공고</a></li>
+                        <li><a href="#">간호부 소식</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="m_gnb">
+        <a href="#allmenu_close" class="menu_close"><img src="images/close.png" alt="전체메뉴 닫기"></a>
+        <div class="m_list">
+            <ul>
+                <li class="main1"><a href="#" class="main1-1">진료과소개</a></li>
+                <ul class="sub">
+                    <li><a href="#">신경외과</a></li>
+                    <li><a href="#">정형외과</a></li>
+                    <li><a href="#">내과</a></li>
+                    <li><a href="#">신장내과</a></li>
+                    <li><a href="#">소아청소년과</a></li>
+                    <li><a href="#">외과</a></li>
+                    <li><a href="#">치과</a></li>
+                    <li><a href="#">산부인과</a></li>
+                    <li><a href="#">영상의학과</a></li>
+                    <li><a href="#">마취통증의학과</a></li>
+                    <li><a href="#">진단검사의학과</a></li>
+                    <li><a href="#">응급의학과</a></li>
+                    <li><a href="#">피부비뇨기과</a></li>
+                    <li><a href="#">흉부외과</a></li>
+                    <li><a href="#">인과</a></li>
+                    <li><a href="#">가정의학과</a></li>
+                    <li><a href="#">이비인후과</a></li>
+                    <li><a href="#">한방과</a></li>
+                    <li><a href="#">신경과</a></li>
+                </ul>
+                <li class="main2"><a href="#" class="main2-1">특화센터안내</a></li>
+                <ul class="sub">
+                    <li><a href="#">손저림센터</a></li>
+                    <li><a href="#">관절센터</a></li>
+                    <li><a href="#">외상센터</a></li>
+                    <li><a href="#">뇌혈관센터</a></li>
+                    <li><a href="#">척추센터</a></li>
+                    <li><a href="#">항노화센터</a></li>
+                    <li><a href="#">통증센터</a></li>
+                    <li><a href="#">소화기ㆍ내분비센터</a></li>
+                    <li><a href="#">심장혈관센터</a></li>
+                    <li><a href="#">대장항문센터</a></li>
+                    <li><a href="#">물리치료센터</a></li>
+                    <li><a href="#">안성형ㆍ피부미용센터</a></li>
+                    <li><a href="#">이비인후과센터</a></li>
+                    <li><a href="#">내시경센터</a></li>
+                    <li><a href="#">건강증진센터</a></li>
+                    <li><a href="#">인공신장센터</a></li>
+                    <li><a href="#">여성의학센터</a></li>
+                    <li><a href="#">응급의료센터</a></li>
+                    <li><a href="#">치과센터</a></li>
+                    <li><a href="#">한방의학센터</a></li>
+                </ul>
+                <li class="main3"><a href="#" class="main3-1">병원이용안내</a></li>
+                <ul class="sub">
+                    <li><a href="#">병원이용안내</a></li>
+                    <li><a href="#">진료시간 안내</a></li>
+                    <li><a href="#">진료예약 안내</a></li>
+                    <li><a href="#">비급여내역 안내</a></li>
+                    <li><a href="#">병원절차 안내</a></li>
+                    <li><a href="#">전화번호 안내</a></li>
+                    <li><a href="#">층별 안내</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                    <li><a href="#">고객중심 안내</a></li>
+                    <li><a href="#">장례식장 안내</a></li>
+                </ul>
+                <li class="main4"><a href="#" class="main4-1">병원소개</a></li>
+                <ul class="sub">
+                    <li><a href="#">병원소개</a></li>
+                    <li><a href="#">병원장 인사말</a></li>
+                    <li><a href="#">미션&비전</a></li>
+                    <li><a href="#">병원 조직도</a></li>
+                    <li><a href="#">병원 연혁</a></li>
+                    <li><a href="#">의료장비 소개</a></li>
+                    <li><a href="#">병원소식</a></li>
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">채용공고</a></li>
+                    <li><a href="#">간호부 소식</a></li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <div id="search">
+        <div class="bg"></div>
+        <div class="s_pop">
+            <a href="#search_close" class="s_close"><img src="images/close.png" alt="검색창 닫기"></a>
+            <div class="inner">
+                <div class="check">
+                    <span>
+                        <input type="radio" name="s_check" id="s_check1">
+                        <label for="s_check1" id="ch1">통합검색</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="s_check" id="s_check2">
+                        <label for="s_check2" id="ch2">진료과 검색</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="s_check" id="s_check3">
+                        <label for="s_check3" id="ch3">특화센터 검색</label>
+                    </span>
+                </div>
+                <form action="#">
+                    <fieldset>
+                        <legend>검색창</legend>
+                        <input type="search" placeholder="검색어를 입력해주세요">
+                        <input type="image" src="images/search.png" alt="검색">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="t_header">
+        <div class="inner">
+            <div class="half">
+                <img src="images/main_icon2.png" alt="응급센터">
+                <p>응급센터</p>
+                <p><a href="#">032-290-0119</a></p>
+            </div>
+            <div class="half">
+                <img src="images/main_icon2.png" alt="건강증진센터">
+                <p>건강증진센터</p>
+                <p><a href="#">032-290-0011</a></p>
+            </div>
+        </div>
+    </div><!-- t_header end -->
+    <div id="header">
+        <div class="inner">
+            <h2><a href="index.html">비에스종합병원 로고</a></h2>
+            <ul id="gnb">
+                <li><a href="#">진료과소개</a>
+                    <div class="gnb_set">
+                        <div class="sub1">
+                            <div class="g_icon">
+                                <img src="images/gnb_icon.png" alt="메뉴 아이콘">
+                                <p>THE FIRST, THE BEST</p>
+                                <p>환자가 만족하는 <em>비에스병원</em> 입니다.</p>
+                            </div>
+                            <ul>
+                                <li><a href="#">신경외과</a></li>
+                                <li><a href="#">정형외과</a></li>
+                                <li><a href="#">내과</a></li>
+                                <li><a href="#">신장내과</a></li>
+                                <li><a href="#">소아청소년과</a></li>
+                                <li><a href="#">외과</a></li>
+                                <li><a href="#">치과</a></li>
+                                <li><a href="#">산부인과</a></li>
+                                <li><a href="#">영상의학과</a></li>
+                                <li><a href="#">마취통증의학과</a></li>
+                                <li><a href="#">진단검사의학과</a></li>
+                                <li><a href="#">응급의학과</a></li>
+                                <li><a href="#">피부비뇨기과</a></li>
+                                <li><a href="#">흉부외과</a></li>
+                                <li><a href="#">인과</a></li>
+                                <li><a href="#">가정의학과</a></li>
+                                <li><a href="#">이비인후과</a></li>
+                                <li><a href="#">한방과</a></li>
+                                <li><a href="#">신경과</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">특화센터안내</a>
+                    <div class="gnb_set">
+                        <div class="sub2">
+                            <div class="g_icon">
+                                <img src="images/gnb_icon.png" alt="메뉴 아이콘">
+                                <p>THE FIRST, THE BEST</p>
+                                <p>환자가 만족하는 <em>비에스병원</em> 입니다.</p>
+                            </div>
+                            <ul>
+                                <li><a href="#">손저림센터</a></li>
+                                <li><a href="#">관절센터</a></li>
+                                <li><a href="#">외상센터</a></li>
+                                <li><a href="#">뇌혈관센터</a></li>
+                                <li><a href="#">척추센터</a></li>
+                                <li><a href="#">항노화센터</a></li>
+                                <li><a href="#">통증센터</a></li>
+                                <li><a href="#">소화기ㆍ내분비센터</a></li>
+                                <li><a href="#">심장혈관센터</a></li>
+                                <li><a href="#">대장항문센터</a></li>
+                                <li><a href="#">물리치료센터</a></li>
+                                <li><a href="#">안성형ㆍ피부미용센터</a></li>
+                                <li><a href="#">이비인후과센터</a></li>
+                                <li><a href="#">내시경센터</a></li>
+                                <li><a href="#">건강증진센터</a></li>
+                                <li><a href="#">인공신장센터</a></li>
+                                <li><a href="#">여성의학센터</a></li>
+                                <li><a href="#">응급의료센터</a></li>
+                                <li><a href="#">치과센터</a></li>
+                                <li><a href="#">한방의학센터</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">병원이용안내</a>
+                    <div class="gnb_set">
+                        <div class="sub3">
+                            <div class="g_icon">
+                                <img src="images/gnb_icon.png" alt="메뉴 아이콘">
+                                <p>THE FIRST, THE BEST</p>
+                                <p>환자가 만족하는 <em>비에스병원</em> 입니다.</p>
+                            </div>
+                            <ul>
+                                <li><a href="#">병원이용안내</a></li>
+                                <li><a href="#">진료시간 안내</a></li>
+                                <li><a href="#">진료예약 안내</a></li>
+                                <li><a href="#">비급여내역 안내</a></li>
+                                <li><a href="#">병원절차 안내</a></li>
+                                <li><a href="#">전화번호 안내</a></li>
+                                <li><a href="#">층별 안내</a></li>
+                                <li><a href="#">찾아오시는 길</a></li>
+                                <li><a href="#">고객중심 안내</a></li>
+                                <li><a href="#">장례식장 안내</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">병원소개</a>
+                    <div class="gnb_set">
+                        <div class="sub4">
+                            <div class="g_icon">
+                                <img src="images/gnb_icon.png" alt="메뉴 아이콘">
+                                <p>THE FIRST, THE BEST</p>
+                                <p>환자가 만족하는 <em>비에스병원</em> 입니다.</p>
+                            </div>
+                            <ul>
+                                <li><a href="#">병원소개</a></li>
+                                <li><a href="#">병원장 인사말</a></li>
+                                <li><a href="#">미션&비전</a></li>
+                                <li><a href="#">병원 조직도</a></li>
+                                <li><a href="#">병원 연혁</a></li>
+                                <li><a href="#">의료장비 소개</a></li>
+                                <li><a href="#">병원소식</a></li>
+                                <li><a href="#">언론보도</a></li>
+                                <li><a href="#">채용공고</a></li>
+                                <li><a href="#">간호부 소식</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div id="searchBox">
+                <!-- 검색창 따로 만들기 -->
+                <a href="#search"><img src="images/search.png" alt="검색 아이콘"></a>
+            </div>
+            <div class="menuBox">
+                <a href="#allmenu"><img src="images/menu.png" alt="메뉴 아이콘"></a>
+            </div>
+        </div>
+    </div><!-- header end -->
+    <div id="visual">
+        <!-- 슬라이더 -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/visual1.jpg" alt="의료서비스 이미지"></div>
+                <div class="swiper-slide"><img src="images/visual2.jpg" alt="선진의료실천 이미지"></div>
+                <div class="swiper-slide"><img src="images/visual3.jpg" alt="비에스종합병원"></div>
+                <div class="swiper-slide"><img src="images/visual4.jpg" alt="최첨단 장비"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <section class="single-item slider">
+            <div><img src="images/mvisual_01.png" alt="의료서비스"></div>
+            <div><img src="images/mvisual_02.png" alt="선진의료실천"></div>
+            <div><img src="images/mvisual_03.png" alt="비에스종합병원"></div>
+            <div><img src="images/mvisual_04.png" alt="최첨단 장비"></div>
+        </section>
+    </div><!-- visual end -->
+    <div id="container">
+        <!-- content로 나눔 -->
+        <div class="content1"><!-- w 1300px -->
+            <div class="left">
+                <ul class="tabs">
+                    <li class="tab_tit current" data-tab="tab-1">진료과목 안내</li>
+                    <li class="tab_tit" data-tab="tab-2">특화센터 안내</li>
+                </ul>
+                <div id="tab-1" class="tab-con current">
+                    <ul>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon1_1.png" alt="신경외과">
+                            </div>
+                            <div class="txt">
+                                <p>신경외과</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon1_2.png" alt="정형외과">
+                            </div>
+                            <div class="txt">
+                                <p>정형외과</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon1_3.png" alt="내과">
+                            </div>
+                            <div class="txt">
+                                <p>내과</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon1_4.png" alt="소아청소년과">
+                            </div>
+                            <div class="txt">
+                                <p>소아청소년과</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon1_5.png" alt="외과">
+                            </div>
+                            <div class="txt">
+                                <p>외과</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon1_6.png" alt="치과">
+                            </div>
+                            <div class="txt">
+                                <p>치과</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon1_7.png" alt="산부인과">
+                            </div>
+                            <div class="txt">
+                                <p>산부인과</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon1_8.png" alt="영상의학과">
+                            </div>
+                            <div class="txt">
+                                <p>영상의학과</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon1_9.png" alt="마취통증의학과">
+                            </div>
+                            <div class="txt">
+                                <p>마취통증의학과</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon1_10.png" alt="신경과">
+                            </div>
+                            <div class="txt">
+                                <p>신경과</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon1_9.png" alt="안과">
+                            </div>
+                            <div class="txt">
+                                <p>안과</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon1_10.png" alt="피부/비뇨의학과">
+                            </div>
+                            <div class="txt">
+                                <p>피부/비뇨의학과</p>
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>
+                <div id="tab-2" class="tab-con">
+                    <ul>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon2_1.png" alt="손저림센터">
+                            </div>
+                            <div class="txt">
+                                <p>손저림센터</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon2_2.png" alt="뇌척추센터">
+                            </div>
+                            <div class="txt">
+                                <p>뇌척추센터</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon2_3.png" alt="관절센터">
+                            </div>
+                            <div class="txt">
+                                <p>관절센터</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon2_4.png" alt="소아청소년센터">
+                            </div>
+                            <div class="txt">
+                                <p>소아청소년센터</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon2_5.png" alt="내시경센터">
+                            </div>
+                            <div class="txt">
+                                <p>내시경센터</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon2_6.png" alt="건강증진센터">
+                            </div>
+                            <div class="txt">
+                                <p>건강증진센터</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon2_7.png" alt="인공신장센터">
+                            </div>
+                            <div class="txt">
+                                <p>인공신장센터</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon2_8.png" alt="여성의학센터">
+                            </div>
+                            <div class="txt">
+                                <p>여성의학센터</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon2_9.png" alt="노인의학센터">
+                            </div>
+                            <div class="txt">
+                                <p>노인의학센터</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon2_10.png" alt="통증완화센터">
+                            </div>
+                            <div class="txt">
+                                <p>통증완화센터</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon2_11.png" alt="치과센터">
+                            </div>
+                            <div class="txt">
+                                <p>치과센터</p>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="pic">
+                                <img src="images/icon/icon2_10.png" alt="안과센터">
+                            </div>
+                            <div class="txt">
+                                <p>안과센터</p>
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>
+            </div><!-- left end -->
+            <div class="right">
+                <div class="high">
+                    <div class="Tit">
+                        <img src="images/main_icon3.png" alt="외래진료시간안내">
+                        <h4>외래진료 시간 안내</h4>
+                    </div>
+                    <p class="dayoff"><span>일요일&공휴일</span>휴진</p>
+                    <p><span>평일</span>AM 8:30 ~ PM 17:30</p>
+                    <p><span>토요일</span>AM 8:30 ~ PM 12:30</p>
+                    <p><span>점심시간</span>PM 12:30 ~ PM 13:30</p>
+                </div>
+                <div class="low">
+                    <img src="images/main_icon1.png" alt="대표전화">
+                    <h4>대표전화</h4>
+                    <p>032-290-0001</p>
+                </div>
+            </div>
+        </div><!-- content1 end -->
+        <div class="content2"><!-- w 100% -->
+            <div class="inner"><!-- w 1300px -->
+                <div class="news_tit">
+                    <h3>NEWS</h3>
+                    <p>고객여러분께 가장 빠른 소식을<br>제공해 드리겠습니다.</p>
+                    <!-- slider button -->
+                    <a href="#" class="more"><img src="images/more.jpg" alt="더보기"></a>
+                    <!-- <div class="L_icon">
+                        <img src="images/slider-icon_left.png" alt="왼쪽 화살표">
+                    </div>
+                    <div class="R_icon">
+                        <img src="images/slider-icon_right.png" alt="오른쪽 화살표">
+                    </div> -->
+                </div>
+                <div class="news_con">
+                    <!-- slider -->
+                    <section class="variable-width slider">
+                        <div class="s_news">
+                            <p>언론보도</p>
+                            <span class="title">[대한경제]비에스종합병원, 카자흐스탄 환자 5명 의료관광을 위해 방문</span>
+                            <span class="date">23.10.20</span>
+                        </div>
+                        <div class="s_news">
+                            <p>언론보도</p>
+                            <span class="title">[중부일보]비에스종합병원, 강화군 노인대학서 건강강좌 실시</span>
+                            <span class="date">23.10.08</span>
+                        </div>
+                        <div class="s_news">
+                            <p>언론보도</p>
+                            <span class="title">[라포르시안]성수의료재단, '고객만족브랜드대상' 종합병원 부분 대상 수상</span>
+                            <span class="date">23.10.13</span>
+                        </div>
+                        <div class="s_news">
+                            <p>언론보도</p>
+                            <span class="title">[신아일보]비에스종합병원-강화풍물시장 상인회, 지정병원 협약식 진행</span>
+                            <span class="date">23.10.13</span>
+                        </div>
+                        <div class="s_news">
+                            <p>언론보도</p>
+                            <span class="title">[라포르시안]비에스종합병원, '약제급여 적정성 평가' 1등급 획득</span>
+                            <span class="date">23.10.13</span>
+                        </div>
+                        <div class="s_news">
+                            <p>언론보도</p>
+                            <span class="title">[라포르시안]비에스종합병원 백승금 행정원장, '1회용품 제로 챌린지' 동참</span>
+                            <span class="date">23.10.13</span>
+                        </div>
+                        <div class="s_news">
+                            <p>언론보도</p>
+                            <span class="title">[대한경제]비에스종합병원, 제 1회 '내 몸을 공부하자' 건강강좌 개최</span>
+                            <span class="date">23.10.13</span>
+                        </div>
+                        <div class="s_news">
+                            <p>언론보도</p>
+                            <span class="title">[브릿지경제]카자흐스탄 알마티에 인천 의료관광 홍보센터 개소</span>
+                            <span class="date">23.07.27</span>
+                        </div>
+                        <div class="s_news">
+                            <p>언론보도</p>
+                            <span class="title">[중부일보][삼라만상]장마철을 이겨내는 건강한 여름나기</span>
+                            <span class="date">23.07.27</span>
+                        </div>
+                        <div class="s_news">
+                            <p>언론보도</p>
+                            <span class="title">[일요신문]비에스종합병원, 강화군 서검도 의료봉사 실시</span>
+                            <span class="date">23.07.27</span>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div><!-- content2 end -->
+        <div class="content3"><!-- w 100%(background image) -->
+            <div class="con3_inner"><!-- w 1000px? -->
+                <!-- slider -->
+                <section class="variable2">
+                    <div><img src="images/banner_01.png" alt="비급여진료비용 안내"></div>
+                    <div><img src="images/banner_02.png" alt="주차요금 안내"></div>
+                    <div><img src="images/banner_03.png" alt="면회 안내"></div>
+                    <div><img src="images/banner_04.png" alt="장례식장 안내"></div>
+                    <div><img src="images/banner_05.png" alt="수술진료 아내"></div>
+                    <div><img src="images/banner_06.png" alt="증명서 발급 안내"></div>
+                    <div><img src="images/banner_07.png" alt="입퇴원 진료 안내"></div>
+                    <div><img src="images/banner_08.png" alt="층별 안내"></div>
+                </section>
+                <section class="variable_mobile">
+                    <div><img src="images/banner_01.png" alt="비급여진료비용 안내"></div>
+                    <div><img src="images/banner_02.png" alt="주차요금 안내"></div>
+                    <div><img src="images/banner_03.png" alt="면회 안내"></div>
+                    <div><img src="images/banner_04.png" alt="장례식장 안내"></div>
+                    <div><img src="images/banner_05.png" alt="수술진료 아내"></div>
+                    <div><img src="images/banner_06.png" alt="증명서 발급 안내"></div>
+                    <div><img src="images/banner_07.png" alt="입퇴원 진료 안내"></div>
+                    <div><img src="images/banner_08.png" alt="층별 안내"></div>
+                </section>
+            </div>
+        </div><!-- content3 end -->
+    </div><!-- container end -->
+    <div id="footer">
+        <div class="inner">
+            <h2><a href="#">하단 로고</a></h2>
+            <span class="address">
+                22534 인천광역시 강화군 강화읍 충렬사로 31 <br>대표번호 : 032.290.0001 &nbsp;FAX : 032.190.0339
+            </span>
+            <ul>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">의료정보운영방침</a></li>
+            </ul>
+            <p class="copy">Copyright&copy;2019 BS HOSPITAL All Right reserved</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+        });
+    </script>
+
+    <script src="./slick/slick.js"></script>
+    <script>
+        // mobile visual
+        $('.single-item').slick({
+            dots: false,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 3000
+        });
+
+        // content2 slider
+        $('.variable-width').slick({
+            // arrows : false,
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            centerMode: false,
+            variableWidth: true,
+            autoplay: true,
+            autoplaySpeed: 3500
+        });
+
+        // content3 slider
+        $('.variable2').slick({
+            arrows: false,
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            centerMode: false,
+            autoplay: true,
+            autoplaySpeed: 3000
+        });
+
+        // mobile content3
+        $('.variable_mobile').slick({
+            arrows: false,
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            centerMode: false,
+            autoplay: true,
+            autoplaySpeed: 3000
+        });
+    </script>
+
+    <script>//scroll 했을 때 header 고정
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("header");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+        }
+    </script>
+</body>
+</html>
