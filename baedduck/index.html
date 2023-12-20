@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>배떡</title>
+  <meta content="배떡, 배달 떡볶이, 떡볶이 맛있는 곳" name="description">
+  <meta content="배달 떡볶이, 배떡, 떡볶이" name="keywords">
+
+  <!-- Favicons -->
+  <link href="images/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Delicious
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    .rbanner{position: fixed;right: 10px;bottom: 50px;}
+
+    .events .section-title p{font-weight: 600;color: red;}
+    .events .section-title h2{font-weight: bold;color: #000;font-size: 38px;}
+    .events .event-item > .content > p{font-size: 15px;color: #8d8d8d;}
+
+    .specials .tab-content h3{font-family: Arial;}
+    .book-a-table .section-title h2{color: #ff4a4a;}
+    .book-a-table .section-title p{font-size: 14px;color: #ff4a4a;font-weight: 600;}
+    .chefs .section-title h2{color: #ff4a4a;font-family: Arial;}
+
+    .gallery{margin-bottom: 40px;padding-top: 0;}
+    .gallery .section-title h2{color: #ff3a3a;}
+    .gallery .gallery-item:hover{border: 1px solid #ff3a3a;box-sizing: border-box;}
+    .gallery .gallery-item a{text-align: center;display: block;margin-top: 10px;transition: all 0.3s;}
+    .gallery .gallery-item a:hover{transform: scale(1.05);}
+    .gallery .gallery-item h2{color: #ff3a3a;font-family: Arial;font-weight: 600;text-align: center;margin-top: 10px;}
+    .gallery .gallery-item strong{color: #000;}
+    .gallery .gallery-item p{color: #000;font-weight: 500;text-align: center;}
+
+    .testimonials .container-fluid{padding: 0;}
+    .testimonials .container-fluid .row{margin: 0;}
+    .testimonials .container-fluid .row .col-lg-6{padding: 0;}
+
+    .contact .section-title p{font-weight: 600;color: red;}
+    .contact .section-title h2{font-weight: bold;color: #000;font-size: 38px;}
+    .contact .map{margin-top: 40px;margin-bottom: 20px;}
+    .contact .map p{font-size: 14px;color: #ff3a3a;font-weight: 600;text-align: center;}
+    .contact .map .txt{font-size: 14px;color: #8a8a8a;text-align: center;font-weight: 600;}
+    .contact .map h1{font-size: 38px;font-weight: 600;text-align: center;color: #000;margin-bottom: 20px;}
+    .contact .map h2{font-size: 30px;font-weight: 600;text-align: center;color: #ff2828;margin-top: 30px;}
+    .contact .store{text-align: center}
+    .contact .con p{font-size: 14px;font-weight: 600;text-align: center;color: #ff2828;margin-top: 40px;}
+    .contact .con h2{text-align: center;font-size: 38px;font-weight: 600;color: #000;}
+
+    #footer .credits p{font-size: 12px;color: #fff;margin-bottom: 15px;font-weight: 600;font-style: normal;margin-top: 30px;}
+    #footer .copyright{font-size: 10px;color: #dfdfdf;}
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+      <i class="bi bi-phone d-flex align-items-center"><span>1600-0684</span></i>
+      <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Fri: 10:00 AM - 16:00 PM</span></i>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <div class="logo me-auto">
+        <h1><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">HOME</a></li>
+          <li class="dropdown">
+            <a href="#">
+              <span>배떡소개</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul>
+              <li><a href="#about">브랜드 소개</a></li>
+              <li><a href="#">BI</a></li>
+              <li><a href="#">오시는 길</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">
+              <span>메뉴소개</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul>
+              <li><a href="#menu">배떡메뉴</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">
+              <span>BEST</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul>
+              <li><a href="#specials">베스트 메뉴</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">
+              <span>NEW</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul>
+              <li><a href="#events">신메뉴</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">
+              <span>NEWS</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul>
+              <li><a href="#chefs">배떡 NEWS</a></li>
+              <li><a href="#">고객문의</a></li>
+              <li><a href="#">창업상담</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">
+              <span>개설안내</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul>
+              <li><a href="#gallery">개설안내</a></li>
+              <li><a href="#">개설비용</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">
+              <span>매장안내</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul>
+              <li><a href="#contact">매장안내</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#book-a-table" class="book-a-table-btn scrollto">주문하기</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(images/v1.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <p class="animate__animated animate__fadeInUp">맛집랭킹 1위</p>
+                <h2 class="animate__animated animate__fadeInDown">로제는<br>배떡</h2>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">상세보기</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">주문하기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url(images/v2.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <p class="animate__animated animate__fadeInUp">신메뉴 출시</p>
+                <h2 class="animate__animated animate__fadeInDown">마라떡볶이<br>출시</h2>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">상세보기</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">주문하기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url(images/v3.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <p class="animate__animated animate__fadeInUp">배떡 신제품</p>
+                <h2 class="animate__animated animate__fadeInDown">로제마라떡볶이<br>출시</h2>
+                <div>
+                  <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">상세보기</a>
+                  <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">주문하기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= --> <!-- 브랜드 소개 -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-lg-6 align-items-stretch">
+            <img src="images/brand.png" alt="brand">
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch">
+
+            <div class="content">
+              <h3>안녕하세요. <br>어메이징피플주㈜ 대표이사 김종화입니다.</h3>
+              <p>
+                배떡은 원료 및 신선재료를 직사입하여 가장 좋은 재료로만 만듭니다. <br>배떡은 모든 공정을 철저하게 관리하므로 건강하고 깨끗한 음식입니다. <br>
+                배떡은 맛, 비쥬얼, 가성비가 뛰어납니다. <br>배떡은 여섯가지 소스 배합으로 따라하기 힘듭니다. <br>최고의 맛으로 고객님을 섬기겠습니다. <br><br>감사합니다.
+                
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Whu Us Section ======= --> <!-- 없어도 됨 -->
+    <!-- <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Why choose <span>Our Restaurant</span></h2>
+          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box">
+              <span>01</span>
+              <h4>Lorem Ipsum</h4>
+              <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span>02</span>
+              <h4>Repellat Nihil</h4>
+              <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box">
+              <span>03</span>
+              <h4> Ad ad velit qui</h4>
+              <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> End Whu Us Section -->
+
+    <!-- ======= Menu Section ======= --> <!-- 전체 메뉴소개 -->
+    <section id="menu" class="menu">
+      <div class="container">
+
+        <div class="section-title">
+          <p>MENU</p>
+          <h2>메뉴소개</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-flters">
+              <li data-filter="*" class="filter-active">Show All</li>
+              <li data-filter=".filter-starters">Main</li>
+              <li data-filter=".filter-salads">Side</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container">
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <div class="menu-content">
+              <a href="#"><img src="images/menu1.png" alt="menu1"></a><span>10,000원 ~</span>
+            </div>
+            <div class="menu-ingredients">
+              로제떡볶이
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <div class="menu-content">
+              <a href="#"><img src="images/menu2.png" alt="menu2"></a><span>6,000원 ~</span>
+            </div>
+            <div class="menu-ingredients">
+              국물떡볶이
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <div class="menu-content">
+              <a href="#"><img src="images/menu3.png" alt="menu3"></a><span>14,000원 ~</span>
+            </div>
+            <div class="menu-ingredients">
+              소곱창떡볶이
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <div class="menu-content">
+              <a href="#"><img src="images/menu4.png" alt="menu4"></a><span>6,000원 ~</span>
+            </div>
+            <div class="menu-ingredients">
+              짜장떡볶이
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <div class="menu-content">
+              <a href="#"><img src="images/menu5.png" alt="menu5"></a><span>12,000원 ~</span>
+            </div>
+            <div class="menu-ingredients">
+              분모자떡볶이
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <div class="menu-content">
+              <a href="#"><img src="images/menu6.png" alt="menu6"></a><span>15,000원 ~</span>
+            </div>
+            <div class="menu-ingredients">
+              로제숯불떡볶이
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <div class="menu-content">
+              <a href="#"><img src="images/menu7.png" alt="menu7"></a><span>10,000원 ~</span>
+            </div>
+            <div class="menu-ingredients">
+              우삼겹떡볶이
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="#"><img src="images/side1.png" alt="side1"></a><span>3,000원</span>
+            </div>
+            <div class="menu-ingredients">
+              김가루밥
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="#"><img src="images/side2.png" alt="side2"></a><span>4,500원</span>
+            </div>
+            <div class="menu-ingredients">
+              날치알밥
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="#"><img src="images/side3.png" alt="side3"></a><span>4,000원</span>
+            </div>
+            <div class="menu-ingredients">
+              햄마요밥
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="#"><img src="images/side4.png" alt="side4"></a><span>4,000원</span>
+            </div>
+            <div class="menu-ingredients">
+              참치마요밥
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="#"><img src="images/side5.png" alt="side5"></a><span>4,500원</span>
+            </div>
+            <div class="menu-ingredients">
+              버터갈릭감자튀김
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="#"><img src="images/side7.png" alt="side7"></a><span>4,000원</span>
+            </div>
+            <div class="menu-ingredients">
+              윙봉4P
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Specials Section ======= --> <!-- 베스트 메뉴 -->
+    <section id="specials" class="specials">
+      <div class="container">
+
+        <div class="section-title">
+          <p>BEST</p>
+          <h2>베스트 메뉴</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">로제떡볶이</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">국물떡볶이</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-5 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>로제떡볶이 1~2인분</h3>
+                    <p>메추리알 + 비엔나 + 베이컨</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="images/menu1.png" alt="new1" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>국물떡볶이 1~2인분</h3>
+                    <p>오뎅 + 파</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="images/menu2.png" alt="new2" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Specials Section -->
+
+    <!-- ======= Events Section ======= --> <!-- 신메뉴 -->
+    <section id="events" class="events">
+      <div class="container">
+
+        <div class="section-title">
+          <p>NEW</p>
+          <h2>신메뉴</h2>
+        </div>
+
+        <div class="events-slider swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="images/new1.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>마라떡볶이</h3>
+                  <div class="price">
+                    <p><span>9,900원 ~</span></p>
+                  </div>
+                  <p>
+                    비엔나 + 푸주 + 포두부 + 베이컨
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i>토핑추가선택 (최대 6개 선택)</li>
+                    <li><i class="bi bi-check-circle"></i>사이드 추가 (최대 2개 선택)</li>
+                    <li><i class="bi bi-check-circle"></i>튀김 추가선택 (최대 6개 선택)</li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="images/new2.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>로제마라떡볶이</h3>
+                  <div class="price">
+                    <p><span>12,900원 ~</span></p>
+                  </div>
+                  <p>
+                    비엔나 + 푸주 + 포두부 + 베이컨
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i>토핑추가선택 (최대 6개 선택)</li>
+                    <li><i class="bi bi-check-circle"></i>사이드 추가 (최대 2개 선택)</li>
+                    <li><i class="bi bi-check-circle"></i>튀김 추가선택 (최대 6개 선택)</li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+    <!-- ======= Book A Table Section ======= --> <!-- 포장, 주문 버튼(2개) -->
+    <section id="book-a-table" class="book-a-table">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>주문하기</h2>
+          <p>*필수 입력</p>
+        </div>
+
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="*성명" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="이메일" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="*전화번호" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" name="date" class="form-control" id="date" placeholder="사장님께 요청사항" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" class="form-control" name="time" id="time" placeholder="포장 시 픽업시간" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="number" class="form-control" name="people" id="people" placeholder="*수저 개수" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="배달 시 라이더님께 요청사항"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+          </div>
+          <div class="text-center">
+            <button type="submit">포장</button>
+            <button type="submit">배달</button>
+          </div>
+        </form>
+
+      </div>
+    </section><!-- End Book A Table Section -->
+
+    <!-- ======= Chefs Section ======= --> <!-- banner 1, 2, 3 -->
+    <section id="chefs" class="chefs">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>배떡 NEWS</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="images/banner1.jpg" class="img-fluid" alt=""></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="images/banner2.jpg" class="img-fluid" alt=""></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="images/banner3.jpg" class="img-fluid" alt=""></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Chefs Section -->
+
+    <!-- ======= Gallery Section ======= --> <!-- 개설안내 아이콘, banner 4, 5 바로 위에 배치 -->
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
+
+        <div class="section-title">
+          <h2>개설안내</h2>
+        </div>
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="#">
+                <img src="images/icon1.jpg" alt="" class="img-fluid">
+                <h2>매장안내</h2>
+                <p>우리집과 가까운 <br>배떡 매장을 <br>찾아보세요!</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="#">
+                <img src="images/icon2.jpg" alt="" class="img-fluid">
+                <h2>메뉴소개</h2>
+                <p>배떡의 다양하고 <br>맛있는 메뉴들을 <br>소개합니다</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="#">
+                <img src="images/icon3.jpg" alt="" class="img-fluid">
+                <h2>개설안내</h2>
+                <p>매장 개설시 <br>필요한 사항을 <br>알려드립니다.</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="#">
+                <img src="images/icon4.jpg" alt="" class="img-fluid">
+                <h2>1600-0684</h2>
+                <strong>CUSTOMER CENTER</strong>
+                <p>평일 오전 10:00 ~ 오후 4:00 <br>주말 및 공휴일 상담불가</p>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Testimonials Section ======= --> <!-- banner4, 5 -->
+    <section id="testimonials" class="testimonials">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6">
+            <a href="#">
+              <img src="images/banner4.jpg" alt="4">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a href="#">
+              <img src="images/banner5.jpg" alt="5">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= --> <!-- 지도 이미지 -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <p>STORE</p>
+          <h2>매장안내</h2>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="store">
+          <img src="images/map.jpg" alt="map">
+        </div>
+        <!-- <div class="info-wrap">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 info">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>A108 Adam Street<br>New York, NY 535022</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-clock"></i>
+              <h4>Open Hours:</h4>
+              <p>Monday-Saturday:<br>11:00 AM - 2300 PM</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>info@example.com<br>contact@example.com</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-phone"></i>
+              <h4>Tell:</h4>
+              <p>+1 5589 55488 51<br>+1 5589 22475 14</p>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="map">
+          <p>LOCATION</p>
+          <h1>찾아오시는 길</h1>
+          
+          <h2>공장</h2>
+          <p class="txt">경기도 하남시 조정대로 150 355호</p>
+          <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.972576119825!2d127.16290231564726!3d37.53214373385405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb02c45f9ff49%3A0x4293cef64fc6cca9!2z6rK96riw64-EIO2VmOuCqOyLnCDstIjsnbTrj5kg6rCQ7LSI66GcIDIwNS0zNA!5e0!3m2!1sko!2skr!4v1637038852627!5m2!1sko!2skr" frameborder="0" allowfullscreen></iframe>
+          
+          <h2>본사</h2>
+          <p class="txt">경기도 하남시 조정대로 150 <br>
+            아이테코 블루존 7층 711</p>
+          <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.065654196008!2d127.19264911564767!3d37.55351693263076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb175c5557577%3A0x4309d07065c14bac!2z6rK96riw64-EIO2VmOuCqOyLnCDrjZXtko3rj5kg7KGw7KCV64yA66GcIDE1MA!5e0!3m2!1sko!2skr!4v1621909685888!5m2!1sko!2skr" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="con">
+          <p>COUNSEL</p>
+          <h2>창업상담</h2>
+        </div>
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="*성명" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="*이메일" required>
+            </div>
+          
+            <div class="form-group col-md-6 mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="*희망 지역" required>
+            </div>
+            <div class="form-group col-md-6 mt-3">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="*전화번호" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="상세 (주소, 평형, 요식업 경험 등)" required></textarea>
+            </div>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">문의하기</button></div>
+        </form>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <img src="images/flogo.png" alt="flogo">
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
+        <p>프랜차이즈그룹:(주)어메이징피플즈  주소:경기도 하남시 조정대로150 아이테코 블루존7층 711  공장:경기도 하남시 조정대로150 355호 <br>
+          물류센터:김해시 서부로 325-5, 김해시 서부로 378번길 32  사업자등록번호:350-81-00791  허가번호:제2019-0267101호 대표전화:1600-0684 개인정보 관리책임자: 박진영</p>
+      </div>
+      <div class="copyright">
+        Copyright ⓒ 2021 Amazing Peoples. All rights reserved.
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- right banner 고정 배치 -->
+  <a href="#" class="rbanner"><img src="images/right_banner.jpg" alt="right_banner"></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
