@@ -1,0 +1,78 @@
+@import url(common.css);
+
+/* visual */
+#visual{width: 100%;background-color: #e8e8e8;}
+.v_inner{width: 1200px;margin: 0 auto;height: 300px;padding: 20px 0;}
+.v_inner h2{font-size: 18px;color: #333;font-weight: 600;margin-bottom: 15px;}
+table{border-collapse: collapse;width: 100%;}
+
+/* visual - ma */
+.ma{width: 400px;background-color: #759bce;padding: 20px;height: 300px;box-sizing: border-box;float: left;}
+.ma tr{border-bottom: 1px solid #91afd8;height: 40px;}
+.ma tr:first-child{background-color: #466896;color: #fff;height: 25px;}
+.ma th{border-collapse: collapse;font-size: 13px;}
+.ma td{color: #fff;font-size: 13px;text-align: center;}
+.ma td:first-child{font-weight: 600;background-color: #5e88c0;text-align: left;padding-left: 10px;}
+.ma td:nth-child(2){background-color: #5e88c0;}
+
+.maVisual{width: 400px;height: 300px;float: left;}
+
+/* visual - today */
+.today{width: 398px;margin-left: 2px;background-color: #d2d8ea;padding: 20px;height: 300px;box-sizing: border-box;float: left;}
+.today tr{border-bottom: 1px solid #a6a9bd;}
+.today tr:first-child{background-color: #748ba8;color: #fff;height: 30px;}
+.today th{border-collapse: collapse;font-size: 13px;}
+.today td{font-size: 13px;height: 23px;text-align: center;color: #666;}
+.today td:first-child{background-color: #bcc6db;font-weight: 600;text-align: left;padding-left: 5px;color: #333;}
+.today td:nth-child(2){background-color: #bcc6db;font-weight: 600;color: #333;}
+
+/* container */
+#container{display: flex;height: 450px;}
+#container h2{font-size: 18px;font-weight: 600;color: #333;margin-bottom: 15px;}
+
+/* content1 */
+.content1{flex: 1;}
+
+.highBox{height: 150px;border-bottom: 1px solid #ddd;border-right: 1px solid #ddd;border-left: 1px solid #ddd;box-sizing: border-box;padding: 20px;
+    background: url(../images/sub5/icon1.gif) no-repeat right 0 top 5px;}
+.highBox li{margin-bottom: 3px;}
+.highBox li:before{content: 'ㆍ';display: inline-block;color: #777;font-size: 10px;}
+.highBox li a{display: inline-block;font-size: 14px;color: #777;}
+.highBox li a:hover, .highBox li a:focus{text-decoration: underline;}
+
+.lowBox{height: 300px;border-right: 1px solid #ddd;border-left: 1px solid #ddd;box-sizing: border-box;padding: 20px;
+    background: url(../images/sub5/icon2.png) no-repeat right 0 top -10px;position: relative;}
+.lowBox li{float: left;margin-bottom: 5px;}
+.lowBox li:nth-child(1n){width: 40%;}
+.lowBox li:nth-child(2n){width: 60%;}
+.lowBox li:before{content: 'ㆍ';display: inline-block;font-size: 10px;color: #777;}
+.lowBox li a{display: inline-block;font-size: 14px;color: #777;}
+.lowBox li a:hover, .lowBox li a:focus{text-decoration: underline;}
+
+.lowBox .more{position: absolute;font-size: 13px;color: #3c5fa0;left: 25px;bottom: 30px;}
+
+/* content2 */
+.content2{flex: 1;}
+
+.con1{height: 300px;border-bottom: 1px solid #ddd;border-right: 1px solid #ddd;box-sizing: border-box;padding: 20px;background: url(../images/sub5/icon3.png) no-repeat right 0 top 0;}
+.con1 .sch{padding-top: 25px;}
+.con1 .sch li{margin-bottom: 10px;height: 25px;}
+.con1 .sch li span{float: left;}
+.con1 .sch li .date{background-color: #5b79b9;color: #fff;font-size: 12px;height: 25px;line-height: 25px;display: inline-block;padding: 0 10px;}
+.con1 .sch li .time{display: inline-block;font-size: 12px;color: #5b79b9;height: 25px;line-height: 25px;padding: 0 10px;}
+.con1 .sch li .Con a{display: inline-block;font-size: 15px;color: #777;}
+.con1 .sch li a:hover, .con1 .sch li a:focus{text-decoration: underline;}
+.con1 .sch li .Con{display: block;font-size: 15px;color: #777;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 200px;height: 25px;line-height: 25px;}
+
+.con2{height: 150px;border-right: 1px solid #ddd;box-sizing: border-box;padding: 20px;background: url(../images/sub5/icon4.gif) no-repeat right 0 top 0;position: relative;}
+.con2 .more{position: absolute;font-size: 13px;color: #3c5fa0;left: 25px;bottom: 30px;}
+
+/* content3 */
+.content3{flex: 1;}
+.seList{border-right: 1px solid #ddd;box-sizing: border-box;padding: 20px;height: 450px;background: url(../images/sub5/icon5.gif) no-repeat right 0 top -10px;position: relative;}
+.seList li{margin-bottom: 5px;}
+.seList li:before{content: 'ㆍ';display: inline-block;font-size: 10px;color: #777;}
+.seList li a{display: inline-block;font-size: 14px;color: #777;}
+.seList li a:hover, .seList li a:focus{text-decoration: underline;}
+
+.seList .more{position: absolute;font-size: 13px;color: #3c5fa0;left: 25px;bottom: 40px;}

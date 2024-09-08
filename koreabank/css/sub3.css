@@ -1,0 +1,98 @@
+@import url(common.css);
+
+#container{margin-bottom: 50px;display: flex;height: 700px;}
+
+/* content1 */
+.content1{flex: 1;}
+.visual{height: 500px;background: url(../images/sub3/visual.jpg) no-repeat;background-size: 100% 100%;}
+.visual > h3{padding-top: 30px;padding-left: 20px;font-size: 20px;color: #93b9ff;margin-bottom: 10px;}
+.visual > p{font-size: 20px;font-weight: 600;color: #fff;padding-left: 20px;}
+
+.lowBox{border-bottom: 1px solid #ddd;border-left: 1px solid #ddd;border-right: 1px solid #ddd;height: 160px;
+    background: url(../images/sub3/ico1.png) no-repeat right 20px bottom 25px;padding: 20px;position: relative;}
+.lowBox h2{font-size: 18px;font-weight: 600;color: #333;margin-top: 5px;margin-bottom: 20px;}
+.lowBox .more{position: absolute;font-size: 13px;color: #3c5fa0;left: 25px;bottom: 30px;}
+
+/* content2 */
+.content2{flex: 1;}
+
+/* content2 - con1 */
+.con1{height: 250px;padding: 20px;border-bottom: 1px solid #ddd;border-right: 1px solid #ddd;box-sizing: border-box;}
+.con1 h2{font-size: 18px;font-weight: 600;color: #333;margin-top: 5px;margin-bottom: 20px;}
+.con1 ul{width: 100%;}
+.con1 ul li{float: left;width: 24.5%;margin-right: 0.5%;padding-top: 25px;padding-bottom: 25px;background-color: #b6c4e1;height: 95px;}
+.con1 ul li:last-child{margin-right: 0;}
+.con1 ul li a{display: block;text-align: center;}
+.con1 ul li a p{font-size: 14px;color: #222;font-weight: 600;padding-top: 5px;}
+.con1 ul li:nth-child(3) a p{padding-top: 13px;}
+
+.con1 ul li a:hover p, .con1 ul li a:focus p{text-decoration: underline;color: #285dbe;}
+
+/* content2 - con2 */
+.con2{height: 250px;padding: 20px;border-bottom: 1px solid #ddd;border-right: 1px solid #ddd;box-sizing: border-box;}
+.con2 h2{font-size: 18px;font-weight: 600;color: #333;margin-top: 5px;margin-bottom: 20px;}
+.con2 > ul{width: 100%;margin-bottom: 20px;}
+.con2 > ul:after{content: '';display: block;clear: both;}
+.con2 > ul li{float: left;list-style: disc;width: 44%;margin-left: 4%;}
+.con2 > ul li::marker{font-size: 7px;color: #777;}
+.con2 > ul li a{display: block;font-size: 14px;color: #777;}
+.con2 > ul li a:hover, .con2 > ul li a:focus{text-decoration: underline;}
+
+.law{padding: 15px;background: url(../images/sub3/more.gif) no-repeat right 15px top 15px #f2f3f7;}
+.law h3{font-size: 15px;font-weight: 600;color: #222;margin-bottom: 10px;}
+.law ul li{position: relative;margin-bottom: 5px;}
+.law ul li:before{content: '-';display: inline-block;position: absolute;top: 0;left: 0;color: #777;}
+.law ul li a{padding-left: 10px;font-size: 14px;color: #777;display: block;}
+.law ul li a:hover, .law ul li a:focus{text-decoration: underline;}
+
+/* content2 - con3 */
+.con3{height: 200px;border-bottom: 1px solid #ddd;}/* padding 총 60px(박스 당 15px + 15px) */
+.con3 > div{float: left;width: 50%;height: 100px;position: relative;}
+.con3 > div h2{font-size: 16px;color: #333;font-weight: 600;padding-top: 15px;padding-left: 15px;margin-bottom: 5px;}
+.con3 > div a{display: block;width: 100%;height: 100%;}
+.con3 > div .subT{font-size: 13px;color: #f35050;padding-left: 15px;}
+.con3 .more{position: absolute;font-size: 13px;color: #3c5fa0;left: 15px;bottom: 15px;}
+.con3 div a:hover h2, .con3 div a:focus h2{text-decoration: underline;}
+.con3 div a:hover .subT, .con3 div a:focus .subT{text-decoration: underline;}
+
+.half1-1, .half1-2{border-bottom: 1px solid #ddd;border-right: 1px solid #ddd;box-sizing: border-box;}
+.half1-3, .half1-4{border-right: 1px solid #ddd;box-sizing: border-box;}
+
+.half1-2{background: url(../images/sub3/ico3-1.png) no-repeat right 15px bottom 15px;}
+.half1-4{background: url(../images/sub3/ico3-2.png) no-repeat right 15px bottom 15px;}
+
+/* content3 */
+.content3{flex: 1;border-right: 1px solid #ddd;box-sizing: border-box;}
+
+/* content3 - toList */
+.toList{height: 250px;padding: 20px;border-bottom: 1px solid #ddd;box-sizing: border-box;background: url(../images/sub3/more.gif) no-repeat right 20px top 30px;}
+.toList h2{font-size: 18px;font-weight: 600;color: #333;margin-top: 5px;margin-bottom: 20px;}
+.toList li{list-style: disc;margin-bottom: 5px;margin-left: 20px;}
+.toList li::marker{font-size: 7px;color: #777;}
+.toList li a span{display: block;font-size: 14px;color: #777;float: left;}
+.toList li a .date{float: right;}
+.toList li a:hover .tit, .toList li a:focus .tit{text-decoration: underline;}
+
+/* content3 - coun */
+.coun{height: 410px;padding: 20px;border-bottom: 1px solid #ddd;}
+.coun .more{position: absolute;bottom: 20px;right: 20px;font-size: 13px;color: #3c5fa0;}
+.coun .more:hover{text-decoration: underline;}
+
+.half2-1{height: 190px;background-color: #f2f3f7;margin-bottom: 20px;position: relative;padding: 20px;}
+.half2-1 h3{font-size: 15px;font-weight: 600;color: #222;margin-bottom: 20px;}
+
+.half2-1 > ul > li{margin-bottom: 5px;}
+.half2-1 > ul > li:before{content: 'ㆍ';display: inline-block;font-size: 14px;color: #222;}
+.half2-1 > ul > li > a{display: inline-block;font-size: 14px;color: #222;}
+
+.half2-1 ul li ul{padding-left: 20px;}
+.half2-1 ul li ul li{padding-left: 10px;position: relative;}
+.half2-1 ul li ul li:before{content: '-';display: inline-block;color: #777;position: absolute;top: 0;left: 0px;}
+.half2-1 ul li ul li a{display: inline-block;font-size: 13px;color: #777;}
+
+.half2-2{background-color: #f2f3f7;height: 160px;position: relative;}
+.half2-2 h3{font-size: 15px;font-weight: 600;color: #222;padding-top: 20px;padding-left: 20px;margin-bottom: 20px;}
+
+.half2-2 ul li{position: relative;padding-left: 30px;}
+.half2-2 ul li:before{content: '-';display: inline-block;position: absolute;top: 0;left: 20px;color: #777;}
+.half2-2 ul li a{display: inline-block;font-size: 13px;color: #777;}
